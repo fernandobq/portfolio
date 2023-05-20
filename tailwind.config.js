@@ -3,23 +3,17 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   content: [],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      black: '#000',
-      white: '#FFF',
-      haiti: '#24123D',
-      meteorite: '#3A1E73',
-      'purple-heart': '#6332C2',
-      'white-lilac': '#F2EEFA'
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        black: '#000',
+        white: '#FFF',
+        haiti: '#24123D',
+        meteorite: '#3A1E73',
+        'purple-heart': '#6332C2',
+        'white-lilac': '#F2EEFA'
+      },
     },
-    screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
-    },
-    extend: {},
   },
   plugins: [],
 }
