@@ -13,6 +13,9 @@ module.exports = {
         'purple-heart': '#6332C2',
         'white-lilac': '#F2EEFA'
       },
+      maxWidth: {
+        '1440': '1440px'
+      }
     },
   },
   plugins: [],

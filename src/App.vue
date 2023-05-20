@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-    <header class='bg-teal-400 text-white-lilac'>
-        <img alt="Vue logo" class="logo-init" src='@/assets/logo.svg' width="125" height="125" />
-
-        <div class="wrapper bg-purple-heart text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-            <HelloWorld msg="You did it!" />
-
-            <nav>
+    <header class="bg-white-lilac w-full">
+        <div class="max-w-1440 grid grid-cols-12 mx-auto gap-x-8 py-5">
+            <div class="col-span-1 col-end-3">
+                <img
+                alt="Vue logo"
+                class="logo-init"
+                src="@/assets/logo.svg"
+            />
+            </div>
+            <nav class="w-full col-span-6 col-end-13 flex justify-center">
                 <RouterLink to="/">Home</RouterLink>
                 <RouterLink to="/about">About</RouterLink>
             </nav>
