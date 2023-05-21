@@ -47,7 +47,9 @@ defineProps<NavigationDesktopProps>()
                 </li>
             </ul>
         </nav>
-        <p class="md:col-end-13 md:col-span-5 col-span-4 text-right md:mt-20 mt-10 md:text-sm text-xs">
+        <p
+            class="md:col-end-13 md:col-span-5 col-span-4 text-right md:mt-20 mt-10 md:text-sm text-xs"
+        >
             © 2023 febaqui. ALL RIGHTS RESERVED
         </p>
     </div>

@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-    <main class="grid grid-cols-6 bg-purple-heart">Home</main>
+    <main class="bg-purple-heart h-screen">Home</main>
 </template>
