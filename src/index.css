@@ -76,8 +76,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-@layer utilities {
-    .router-link-active {
-        color: #fff;
+@layer components {
+    .normal-transition {
+        @apply ease-in-out transition-all duration-300;
     }
 }

@@ -22,7 +22,7 @@ defineProps<NavigationDesktopProps>()
             class="w-full col-span-6 col-end-13 flex justify-end items-center font-light"
         >
             <RouterLink
-                class="text-2xl mr-10 h-fit hover:text-white transition-all ease-in-out duration-300 py-4 px-8 rounded-md"
+                class="text-2xl mr-10 h-fit hover:text-white normal-transition py-4 px-8 rounded-md"
                 v-for="link in links"
                 :key="link.id"
                 :to="link.link"
