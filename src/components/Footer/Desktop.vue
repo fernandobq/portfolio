@@ -1,7 +1,7 @@
 <script lang="ts">
 import { RouterLink } from 'vue-router'
 import type { LinkAttributes } from '../../utils/types'
-import svgs from '@/utils/svgs.vue'
+import svgs from '@/assets/utils/svgs.vue'
 interface NavigationDesktopProps {
     links: LinkAttributes[]
     socialMedia: LinkAttributes[]
