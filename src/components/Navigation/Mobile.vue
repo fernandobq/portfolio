@@ -30,7 +30,7 @@ const handleOpenMenu = () => {
                 </div>
             </button>
         </div>
-        <div ref="menuOverlay" class="menu-options-overley absolute w-screen h-screen bg-meteorite right-0 translate-x-full ease-in-out transition-all duration-300 flex">
+        <div ref="menuOverlay" class="menu-options-overley absolute w-screen h-screen bg-meteorite right-0 translate-x-full ease-in-out transition-all duration-300 flex top-0">
             <button class="w-10 h-10 bg-black">Hola</button>
             <div class="w-10 h-10 bg-slate-50"></div>
         </div>
