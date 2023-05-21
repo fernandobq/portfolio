@@ -26,7 +26,7 @@ const handleToggleMenu = (delay = false) => {
     <div class="max-w-1440 grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center">
         <div class="col-span-1 hover:scale-105 transition-all">
             <RouterLink to="/">
-                <img alt="Vue logo" class="logo-init" src="@/assets/images/logo.svg" />
+                <img alt="Vue logo" class="logo-init w-[90px] mx-auto" src="@/assets/images/logo.svg" />
             </RouterLink>
         </div>
         <div class="col-span-1 col-end-5">
