@@ -26,6 +26,6 @@ const links = [
 </script>
 
 <template>
-    <Desktop class="desktop hidden lg:grid" :links="links" />
-    <Mobile class="mobile lg:hidden" :links="links" />
+    <Desktop class="desktop hidden md:grid" :links="links" />
+    <Mobile class="mobile md:hidden" :links="links" />
 </template>
