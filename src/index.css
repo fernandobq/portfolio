@@ -72,7 +72,12 @@
     font-style: italic;
 }
 
-
 html {
     font-family: 'Roboto', sans-serif;
+}
+
+@layer utilities {
+    .router-link-active {
+        color: #fff;
+    }
 }
