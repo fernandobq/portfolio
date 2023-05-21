@@ -1,7 +1,7 @@
 <script lang="ts">
 import { RouterLink } from 'vue-router'
 import type { LinkAttributes } from '../../utils/types'
-import Svgs from '@/utils/svgs.vue'
+import svgs from '@/utils/svgs.vue'
 interface NavigationDesktopProps {
     links: LinkAttributes[]
     socialMedia: LinkAttributes[]
@@ -20,7 +20,7 @@ defineProps<NavigationDesktopProps>()
             class="md:col-span-2 md:col-start-1 col-span-4 hover:scale-105 transition-all h-fit self-center"
         >
             <RouterLink class="w-fit" to="/">
-                <Svgs name="greenLogo" class="logo-init w-[90px] mx-auto h-fit" />
+                <svgs name="greenLogo" class="logo-init w-[90px] mx-auto h-fit" />
             </RouterLink>
             <p class="text-center mt-4 text-sm">Fernando Barraza Quintero</p>
         </div>
@@ -42,7 +42,7 @@ defineProps<NavigationDesktopProps>()
             <ul class="social-media flex gap-x-6">
                 <li v-for="link in socialMedia" :key="link.id" class="group/social">
                     <a :href="link.link" target="_blank">
-                        <Svgs class="w-10 h-10" :name="link.name" hover-color="green" />
+                        <svgs class="w-10 h-10" :name="link.name" hover-color="green" />
                     </a>
                 </li>
             </ul>
