@@ -25,7 +25,7 @@ const router = createRouter({
             component: () => import('../views/ContactView.vue')
         }
     ],
-    linkActiveClass: 'bg-purple-heart text-white'
+    linkActiveClass: 'bg-purple-heart !text-white'
 })
 
 export default router
