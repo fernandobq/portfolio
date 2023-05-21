@@ -11,7 +11,7 @@ module.exports = {
         haiti: '#24123D',
         meteorite: '#3A1E73',
         'purple-heart': '#6332C2',
-        'white-lilac': '#F2EEFA'
+        'white-lilac': '#C6ACFA'
       },
       maxWidth: {
         '1440': '1440px'
