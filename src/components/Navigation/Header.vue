@@ -26,6 +26,8 @@ const links = [
 </script>
 
 <template>
-    <Desktop class="desktop hidden md:grid" :links="links" />
-    <Mobile class="mobile md:hidden" :links="links" />
+    <header class="bg-white-lilac w-full">
+        <Desktop class="desktop hidden md:grid" :links="links" />
+        <Mobile class="mobile md:hidden" :links="links" />
+    </header>
 </template>

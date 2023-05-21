@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import Navigation from './components/Navigation/Navigation.vue'
+import Header from './components/Navigation/Header.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-    <header class="bg-white-lilac w-full">
-        <Navigation />
-    </header>
+    <Header />
     <main>
         <RouterView />
     </main>
-    <footer>This is the footer</footer>
+    <Footer />
 </template>
