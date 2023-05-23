@@ -43,7 +43,7 @@ const socialMedia = [
 </script>
 
 <template>
-    <footer class="bg-meteorite w-full text-white">
+    <footer class="bg-purple-heart w-full text-white">
         <Desktop :links="links" :social-media="socialMedia" />
     </footer>
 </template>

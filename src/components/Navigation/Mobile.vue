@@ -23,37 +23,39 @@ const handleToggleMenu = (delay = false) => {
 </script>
 
 <template>
-    <div class="max-w-1440 grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center">
+    <div
+        class="bg-white-lilac-10 w-[95%] grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center rounded-xl"
+    >
         <div class="col-span-1 hover:scale-105 transition-all">
             <RouterLink to="/">
                 <img
                     alt="Vue logo"
                     class="logo-init w-[90px] mx-auto"
-                    src="@/assets/images/logo.svg"
+                    src="@/assets/images/darkLogo.svg"
                 />
             </RouterLink>
         </div>
         <div class="col-span-1 col-end-5">
             <button
                 @click="handleToggleMenu(false)"
-                class="group/hamburguer w-10 h-10 ml-auto grid place-content-center rounded-md hover:bg-meteorite outline-none"
+                class="group/hamburguer w-10 h-10 ml-auto grid place-content-center rounded-md hover:bg-white outline-none"
             >
                 <div class="hamburguer w-8 ml-auto flex flex-col gap-y-1">
                     <div
                         v-for="index in 3"
                         :key="index"
-                        class="w-full bg-meteorite h-1 group-hover/hamburguer:bg-white rounded-md"
+                        class="w-full bg-white-lilac h-1 group-hover/hamburguer:bg-meteorite rounded-md"
                     ></div>
                 </div>
             </button>
         </div>
         <div
             ref="menuOverlay"
-            class="menu-options-overley absolute w-screen h-screen bg-meteorite right-0 translate-x-full top-0 normal-transition p-5"
+            class="menu-options-overley absolute w-screen h-screen bg-haiti right-0 translate-x-full top-[-10px] normal-transition p-5"
         >
             <button
                 @click="handleToggleMenu(false)"
-                class="w-10 h-10 bg-meteorite relative flex justify-center items-center group/close rounded-md hover:bg-white ml-auto"
+                class="w-10 h-10 bg-haiti relative flex justify-center items-center group/close rounded-md hover:bg-white ml-auto"
             >
                 <div
                     class="w-8 bg-white h-1 group-hover/close:bg-meteorite rounded-md rotate-45 absolute"

@@ -44,10 +44,10 @@ onUnmounted(() => {
 
 <template>
     <header
-        class="bg-white-lilac w-full fixed top-0 z-10 normal-transition"
+        class="w-full fixed top-5 z-10 normal-transition"
         :class="
-            positionY > 150 && direction === 1
-                ? 'translate-y-[-100%]'
+            positionY > 125 && direction === 1
+                ? 'translate-y-[-115%]'
                 : direction === -1
                 ? 'translate-y-0'
                 : ''

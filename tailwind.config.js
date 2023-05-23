@@ -12,13 +12,17 @@ module.exports = {
         meteorite: '#3A1E73',
         'purple-heart': '#6332C2',
         'white-lilac': '#C6ACFA',
-        'green': '#04B200'
+        'green': '#04B200',
+        'white-lilac-10': 'rgba(198, 172, 250, .1)'
       },
       maxWidth: {
         '1440': '1440px'
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"]
+      },
+      fontSize: {
+        hero: ['7rem', '7rem']
       }
     },
   },
