@@ -12,7 +12,7 @@ defineProps<NavigationDesktopProps>()
 
 <template>
     <div
-        class="bg-white-lilac-10 max-w-[1400px] w-[95%] grid grid-cols-12 mx-auto gap-x-8 py-5 px-10 lg:px-20 rounded-xl text-white"
+        class="backdrop-blur-md bg-white-lilac-10 max-w-[1400px] w-[95%] grid grid-cols-12 mx-auto gap-x-8 py-5 px-10 lg:px-20 rounded-xl text-white"
     >
         <div class="col-span-2 col-start-1 hover:scale-105 transition-all">
             <RouterLink class="w-fit" to="/">

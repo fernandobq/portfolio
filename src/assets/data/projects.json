@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Tebra",
+        "link": "https://www.tebra.com/",
+        "technologies": ["WordPress", "Sass", "Foundation"],
+        "image": "/src/assets/images/projects/tebra.png",
+        "workDone": "Jump in project in the middle of the change of brand and helped with the creation of a custom form creator able to set the required, the not required, hidden. Also helped with the creation of multiple components",
+        "github": "",
+        "description": "Tebra provide independent healthcare practices with digital tools and support to thrive in a new era of healthcare."
+    },
+    {
+        "id": 2,
+        "name": "Priio",
+        "link": "https://priio.com/",
+        "technologies": ["WordPress", "Sass", "Vue", "Node.js", "Laravel"],
+        "image": "/src/assets/images/projects/priio.png",
+        "workDone": "Started in this project with the legacy code of the first iteration, reskin the whole project with vue for the app and Laravel for the Backend, also worked on the sales website made with WordPress",
+        "github": "",
+        "description": "Priio will deliver fast results ranked in order of what you and your team need to prioritize in order to gain maximum clarity and ultimately succeed."
+    },
+    {
+        "id": 3,
+        "name": "RockCreek Group",
+        "link": "https://therockcreekgroup.com/",
+        "technologies": ["WordPress", "Sass", "Foundation", "Algolia"],
+        "image": "/src/assets/images/projects/rockcreekgroup.gif",
+        "workDone": "This was my first led project and I supervised the whole development process and personally added algolia to the project",
+        "github": "",
+        "description": "A Global Investment Firm Helping Shape a More Sustainable Tomorrow"
+    },
+    {
+        "id": 4,
+        "name": "Fernando Barraza Quintero Portfolio",
+        "link": "https://febaqui.netlify.app/",
+        "technologies": ["Vue", "Tailwind"],
+        "image": "/src/assets/images/projects/fernandobq.png",
+        "workDone": "I created this site to showcase the technologies and abilities to code that I have honed throught my career, credit to Guillermo Gonzalez for helping me with the design",
+        "github": "https://github.com/fernandobq/portfolio",
+        "description": "My portfolio"
+    }
+]

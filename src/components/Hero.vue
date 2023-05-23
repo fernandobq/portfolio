@@ -90,7 +90,9 @@ onMounted(() => {
 
 <template>
     <section ref="heroElement" class="home bg-haiti text-purple-heart">
-        <div class="max-w-1440 w-full mx-auto h-full px-5 md:px-20 pt-10 pb-16 lg:py-[100px] lg:flex">
+        <div
+            class="max-w-1440 w-full mx-auto h-full px-5 md:px-20 pt-10 pb-16 lg:py-[100px] lg:flex"
+        >
             <div class="title lg:w-[70%]">
                 <h2
                     class="name text-2xl md:text-3xl lg:text-4xl font-light text-slate-300 mb-5 lg:mb-10"

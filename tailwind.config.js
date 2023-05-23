@@ -13,10 +13,13 @@ module.exports = {
         'purple-heart': '#6332C2',
         'white-lilac': '#C6ACFA',
         'green': '#04B200',
-        'white-lilac-10': 'rgba(198, 172, 250, .1)'
+        'white-lilac-10': 'rgba(198, 172, 250, .1)',
       },
       maxWidth: {
         '1440': '1440px'
+      },
+      width: {
+        "mobile-modal": 'calc(100% - 40px)'
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"]

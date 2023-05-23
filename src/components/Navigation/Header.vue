@@ -2,31 +2,10 @@
 import { onMounted, onUnmounted, ref } from 'vue'
 import Desktop from './Desktop.vue'
 import Mobile from './Mobile.vue'
+import links from '@/assets/data/navigation.json'
 const direction = ref(0)
 const positionY = ref(0)
 const startY = ref(0)
-const links = [
-    {
-        link: '/',
-        name: 'Home',
-        id: 1
-    },
-    {
-        link: '/about',
-        name: 'About',
-        id: 2
-    },
-    {
-        link: '/projects',
-        name: 'Projects',
-        id: 3
-    },
-    {
-        link: '/contact',
-        name: 'Contact',
-        id: 4
-    }
-]
 
 const update = () => {
     positionY.value = window.scrollY
@@ -44,10 +23,10 @@ onUnmounted(() => {
 
 <template>
     <header
-        class="w-full fixed top-5 z-10 normal-transition"
+        class="w-full fixed top-5 z-30 normal-transition"
         :class="
-            positionY > 125 && direction === 1
-                ? 'translate-y-[-115%]'
+            positionY > 80 && direction === 1
+                ? 'translate-y-[-120%]'
                 : direction === -1
                 ? 'translate-y-0'
                 : ''

@@ -11,12 +11,15 @@ interface NavigationMobileProps {
 <script lang="ts" setup>
 defineProps<NavigationMobileProps>()
 const menuOverlay = ref()
+const window = document.querySelector('html')
 const handleToggleMenu = (delay = false) => {
     if (delay) {
         setTimeout(() => {
+            window?.classList.toggle('overflow-hidden')
             menuOverlay.value.classList.toggle('translate-x-full')
         }, 500)
     } else {
+        window?.classList.toggle('overflow-hidden')
         menuOverlay.value.classList.toggle('translate-x-full')
     }
 }
@@ -24,7 +27,7 @@ const handleToggleMenu = (delay = false) => {
 
 <template>
     <div
-        class="bg-white-lilac-10 w-[95%] grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center rounded-xl"
+        class="backdrop-blur-md bg-white-lilac-10 w-mobile-modal grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center rounded-xl"
     >
         <div class="col-span-1 hover:scale-105 transition-all">
             <RouterLink to="/">
@@ -51,7 +54,7 @@ const handleToggleMenu = (delay = false) => {
         </div>
         <div
             ref="menuOverlay"
-            class="menu-options-overley absolute w-screen h-screen bg-haiti right-0 translate-x-full top-[-10px] normal-transition p-5"
+            class="menu-options-overley absolute w-screen h-screen bg-haiti right-[-20px] translate-x-full top-[-20px] normal-transition p-5"
         >
             <button
                 @click="handleToggleMenu(false)"
