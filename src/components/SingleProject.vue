@@ -64,11 +64,11 @@ const handleModalClick = (e: MouseEvent) => {
                 <div
                     @click="handleModalClick"
                     id="outerModal"
-                    class="fixed z-40 top-0 left-0 w-screen h-screen after:content-[''] after:z-[1] after:inset-0 after:rounded-xl after:w-full after:h-full after:absolute after:bg-purple-heart"
+                    class="fixed z-40 top-0 left-0 w-screen h-screen after:content-[''] after:z-[1] after:inset-0 after:rounded-xl after:w-full after:h-full after:absolute after:bg-white-lilac-10 after:backdrop-blur-sm"
                     v-if="modalClicked === project.name"
                 >
                     <div
-                        class="fixed z-20 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10"
+                        class="fixed max-h-[60%] overflow-y-auto z-20 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10"
                     >
                         <button
                             @click="toggleModal"
@@ -125,10 +125,12 @@ article:after {
 .v-enter-active,
 .v-leave-active {
     transition: opacity 500ms ease;
+    backdrop-filter: blur(4px) opacity(1);
 }
 
 .v-enter-from,
 .v-leave-to {
     opacity: 0;
+    backdrop-filter: blur(4px) opacity(0);
 }
 </style>
