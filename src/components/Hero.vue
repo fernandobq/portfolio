@@ -8,7 +8,8 @@ const heroElement = ref()
 const frontEnd = ref()
 const backEnd = ref()
 const fullStack = ref()
-const newArrayOrder = new Set()
+const newSetOrder = new Set()
+let newArrayOrder: number[] = []
 const frontEndtechnologies = [
     'html',
     'css',
@@ -40,9 +41,10 @@ const randomNumber = (arrayLength: number): number => {
 }
 
 const createRandomList = () => {
-    while (newArrayOrder.size < backEndTechnologies.length) {
-        newArrayOrder.add(randomNumber(backEndTechnologies.length))
+    while (newSetOrder.size < backEndTechnologies.length) {
+        newSetOrder.add(randomNumber(backEndTechnologies.length))
     }
+    newArrayOrder = [...newSetOrder] as number[]
 }
 
 createRandomList()
@@ -76,7 +78,7 @@ onMounted(() => {
         tl2.set(`.${tech}`, { opacity: 0 })
     })
 
-    newArrayOrder.forEach((order) => {
+    newArrayOrder.forEach((order: number) => {
         tl2.to(`.${backEndTechnologies[order]}`, { opacity: 0, duration: 1 / 5 }).to(
             `.${frontEndtechnologies[order]}`,
             { opacity: 1, duration: 1 / 5 },
