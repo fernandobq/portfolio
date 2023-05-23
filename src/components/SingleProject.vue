@@ -21,13 +21,15 @@ interface ProjectProps {
 <script lang="ts" setup>
 defineProps<ProjectProps>()
 
-const toggleModal = (e: T) => {
-    modalClicked.value = e.target.id
+const toggleModal = (e: MouseEvent) => {
+    const target = e.target as HTMLElement
+    modalClicked.value = target.id
     window?.classList.toggle('overflow-hidden')
 }
 
-const handleModalClick = (e: T) => {
-    if (e.target.id === 'outerModal') {
+const handleModalClick = (e: MouseEvent) => {
+    const target = e.target as HTMLElement
+    if (target.id === 'outerModal') {
         toggleModal(e)
     }
 }
