@@ -105,10 +105,10 @@ const handleModalClick = (e: MouseEvent) => {
                             class="flex gap-3 items-center mt-1"
                         >
                             <a v-if="project.github" :href="project.github" target="_blank">
-                                <svgs name="github" class="w-8 h-fit" />
+                                <svgs name="github" class="w-8 h-8" />
                             </a>
                             <a v-if="project.link" :href="project.link" target="_blank">
-                                <svgs v-if="project.link" name="world" class="w-8 h-fit" />
+                                <svgs v-if="project.link" name="world" class="w-8 h-8" />
                             </a>
                         </div>
                     </div>
