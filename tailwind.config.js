@@ -19,7 +19,7 @@ module.exports = {
         '1440': '1440px'
       },
       width: {
-        "mobile-modal": 'calc(100% - 40px)'
+        "mobile-modal": 'calc(100% - 40px)',
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"]
