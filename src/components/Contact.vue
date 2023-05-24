@@ -204,7 +204,7 @@ const handleSubmit = (e: Event) => {
             </form>
             <div v-else-if="loading">Loading...</div>
             <div v-else class="mt-10 text-sm">
-                Thanks for your message, I will reach out as soon as possible
+                Thanks for your message, I will reach out as soon as possible.
             </div>
         </div>
     </div>
