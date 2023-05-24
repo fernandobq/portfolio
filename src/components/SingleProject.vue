@@ -87,13 +87,25 @@ const handleModalClick = (e: MouseEvent) => {
                                 class="w-6 bg-white h-1 group-hover/close:bg-meteorite rounded-md rotate-[135deg] absolute"
                             ></div>
                         </button>
-                        <p class="text-2xl font-bold -mt-8 lg:text-3xl xl:text-4xl">{{ project.name }}</p>
+                        <p class="text-2xl font-bold -mt-8 lg:text-3xl xl:text-4xl">
+                            {{ project.name }}
+                        </p>
                         <p class="text-lg font-medium mt-4 lg:text-xl lg:mt-8 xl:text-2xl">About</p>
-                        <p class="text-sm mt-1 lg:text-base lg:mt-2 xl:text-lg">{{ project.description }}</p>
-                        <img class="rounded-lg mt-4 lg:mt-8" :src="project.image" :alt="project.name" />
-                        <p class="text-lg font-medium mt-4 lg:text-xl lg:mt-8  xl:text-2xl">Role</p>
-                        <p class="text-sm mt-1 lg:text-base lg:mt-2 xl:text-lg">{{ project.workDone }}</p>
-                        <p class="text-lg font-medium mt-4 lg:text-xl lg:mt-8  xl:text-2xl">Technologies</p>
+                        <p class="text-sm mt-1 lg:text-base lg:mt-2 xl:text-lg">
+                            {{ project.description }}
+                        </p>
+                        <img
+                            class="rounded-lg mt-4 lg:mt-8"
+                            :src="project.image"
+                            :alt="project.name"
+                        />
+                        <p class="text-lg font-medium mt-4 lg:text-xl lg:mt-8 xl:text-2xl">Role</p>
+                        <p class="text-sm mt-1 lg:text-base lg:mt-2 xl:text-lg">
+                            {{ project.workDone }}
+                        </p>
+                        <p class="text-lg font-medium mt-4 lg:text-xl lg:mt-8 xl:text-2xl">
+                            Technologies
+                        </p>
                         <div class="mt-1 flex gap-2 lg:mt-2">
                             <p
                                 v-for="tag in project.technologies"
@@ -103,7 +115,10 @@ const handleModalClick = (e: MouseEvent) => {
                                 {{ tag }}
                             </p>
                         </div>
-                        <p v-if="project.github || project.link" class="text-lg font-medium mt-4 lg:text-xl lg:mt-8  xl:text-2xl">
+                        <p
+                            v-if="project.github || project.link"
+                            class="text-lg font-medium mt-4 lg:text-xl lg:mt-8 xl:text-2xl"
+                        >
                             Links
                         </p>
                         <div
@@ -145,8 +160,7 @@ article:after {
 }
 
 .modal-card {
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
 </style>

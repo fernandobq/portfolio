@@ -43,7 +43,7 @@
         "id": 5,
         "name": "Fernando Barraza Quintero Portfolio",
         "link": "https://febaqui.netlify.app/",
-        "technologies": ["Vue", "Tailwind"],
+        "technologies": ["Vue", "Tailwind", "gsap"],
         "image": "/projects/fernandobq.png",
         "workDone": "I created this site to showcase the technologies and abilities to code that I have honed throught my career, credit to Guillermo Gonzalez for helping me with the design.",
         "github": "https://github.com/fernandobq/portfolio",
@@ -56,7 +56,7 @@
         "technologies": ["WordPress", "Foundation", "Sass"],
         "image": "/projects/grail.png",
         "workDone": "Created the articles and publications structure for the blog post of the site, and also created a vast of components used in the site.",
-        "github": "https://github.com/fernandobq/portfolio",
+        "github": "",
         "description": "Healthcare company focused on saving lives and improving health by pioneering new technologies for early cancer detection."
     }
 ]
