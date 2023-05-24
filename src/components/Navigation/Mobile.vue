@@ -27,7 +27,7 @@ const handleToggleMenu = (delay = false) => {
 
 <template>
     <div
-        class="backdrop-blur-md bg-white-lilac-10 w-mobile-modal grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center rounded-xl"
+        class="backdrop-blur-md bg-white-lilac-10 w-mobile-modal grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center rounded-xl relative"
     >
         <div class="col-span-1 hover:scale-105 transition-all">
             <RouterLink to="/">
