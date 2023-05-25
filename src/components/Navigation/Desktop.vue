@@ -20,8 +20,8 @@ onMounted(() => {
     props.links.forEach((link) => {
         ScrollTrigger.create({
             trigger: `.${link.sectionId}-section`,
-            start: 'top bottom-=100',
-            end: 'bottom bottom-=100',
+            start: 'top bottom-=300',
+            end: 'bottom bottom-=300',
             toggleClass: { targets: `.${link.sectionId}-button`, className: 'bg-purple-heart' }
         })
     })
