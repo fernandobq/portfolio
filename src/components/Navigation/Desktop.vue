@@ -30,7 +30,7 @@ defineProps<NavigationDesktopProps>()
                 class="w-full col-span-7 col-end-13 flex justify-end items-center font-light"
             >
                 <button
-                    class="xl:text-2xl xl:ml-7 xl:py-4 xl:px-8 lg:text-xl lg:ml-5 lg:py-3 lg:px-6 md:text-l md:ml-3 md:py-2 md:px-4 h-fit hover:text-slate-500 normal-transition rounded-md"
+                    class="xl:text-2xl xl:ml-7 xl:py-4 xl:px-8 lg:text-xl lg:ml-5 lg:py-3 lg:px-6 md:text-l md:ml-3 md:py-2 md:px-4 h-fit hover:bg-purple-heart normal-transition rounded-md"
                     v-for="link in links"
                     :key="link.id"
                     @click="handleScrollTo(link.sectionId)"
