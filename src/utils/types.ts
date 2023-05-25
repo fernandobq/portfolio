@@ -1,5 +1,5 @@
 export type LinkAttributes = {
-    link: string
+    sectionId: string
     name: string
     id: number
 }

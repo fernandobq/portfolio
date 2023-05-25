@@ -1,21 +1,17 @@
 [
     {
-        "link": "/",
-        "name": "Home",
-        "id": 1
-    },
-    {
-        "link": "/about",
-        "name": "About",
-        "id": 2
-    },
-    {
-        "link": "/projects",
+        "sectionId": "projects",
         "name": "Projects",
         "id": 3
     },
     {
-        "link": "/contact",
+        "sectionId": "about",
+        "name": "About",
+        "id": 2
+    },
+
+    {
+        "sectionId": "contact",
         "name": "Contact",
         "id": 4
     }

@@ -9,18 +9,20 @@ interface NavigationMobileProps {
 </script>
 
 <script lang="ts" setup>
+import useScroll from '@/utils/useScroll'
+const { handleScrollTo, scrollToTop } = useScroll()
 defineProps<NavigationMobileProps>()
 const menuOverlay = ref()
 const window = document.querySelector('html')
-const handleToggleMenu = (delay = false) => {
+const handleToggleMenu = (delay = false, sectionId = '') => {
+    window?.classList.toggle('overflow-hidden')
+    menuOverlay.value.classList.toggle('translate-x-full')
     if (delay) {
         setTimeout(() => {
-            window?.classList.toggle('overflow-hidden')
-            menuOverlay.value.classList.toggle('translate-x-full')
-        }, 500)
-    } else {
-        window?.classList.toggle('overflow-hidden')
-        menuOverlay.value.classList.toggle('translate-x-full')
+            if (sectionId) {
+                handleScrollTo(sectionId, 140)
+            }
+        }, 300)
     }
 }
 </script>
@@ -30,13 +32,13 @@ const handleToggleMenu = (delay = false) => {
         class="backdrop-blur-md bg-white-lilac-10 w-mobile-modal grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center rounded-xl relative"
     >
         <div class="col-span-1 hover:scale-105 transition-all">
-            <RouterLink to="/">
+            <button @click="scrollToTop()">
                 <img
                     alt="Vue logo"
                     class="logo-init w-[90px] mx-auto"
                     src="@/assets/images/darkLogo.svg"
                 />
-            </RouterLink>
+            </button>
         </div>
         <div class="col-span-1 col-end-5">
             <button
@@ -68,14 +70,14 @@ const handleToggleMenu = (delay = false) => {
                 ></div>
             </button>
             <div class="flex flex-col mt-6">
-                <RouterLink
-                    @click="handleToggleMenu(true)"
+                <button
+                    @click="handleToggleMenu(true, link.sectionId)"
                     class="text-2xl mr-10 h-fit hover:text-white normal-transition py-4 px-8 rounded-md text-center w-full text-white"
                     v-for="link in links"
                     :key="link.id"
-                    :to="link.link"
-                    >{{ link.name }}
-                </RouterLink>
+                >
+                    {{ link.name }}
+                </button>
             </div>
         </div>
     </div>

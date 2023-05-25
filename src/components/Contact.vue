@@ -122,7 +122,7 @@ const handleSubmit = (e: Event) => {
 <template>
     <div class="bg-haiti text-white">
         <div class="max-w-1440 mx-auto px-5 py-10 md:px-20">
-            <h3 class="text-3xl lg:text-5xl font-medium">Contact</h3>
+            <h3 id="contact" class="text-3xl lg:text-5xl font-medium">Contact</h3>
             <p class="text-lg mt-5">
                 If you wan to connect you can reach me on
                 <a
