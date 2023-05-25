@@ -2,6 +2,7 @@
 import type { LinkAttributes } from '../../utils/types'
 import { ref } from 'vue'
 import svgs from '../utils/svgs.vue'
+import socialMedia from '@/assets/data/socialMedia.json'
 
 interface NavigationMobileProps {
     links: LinkAttributes[]
@@ -79,16 +80,8 @@ const handleToggleMenu = (delay = false, sectionId = '') => {
                     {{ link.name }}
                 </button>
                 <div class="flex gap-5 justify-center absolute bottom-20 left-1/2 -translate-x-1/2">
-                    <a
-                        href="https://www.linkedin.com/in/fernando-barraza-quintero-76b974197/"
-                        target="_blank"
-                        ><svgs class="w-10 h-10" name="linkedin" />
-                    </a>
-                    <a href="https://github.com/fernandobq" target="_blank"
-                        ><svgs class="w-10 h-10" name="github"
-                    /></a>
-                    <a href="mailto:febaqui1008@gmail.com"
-                        ><svgs class="w-10 h-10" name="email"
+                    <a v-for="link in socialMedia" :href="link.link" target="_blank"
+                        ><svgs class="w-10 h-10" :name="link.name"
                     /></a>
                 </div>
             </div>

@@ -183,7 +183,10 @@ const handleSubmit = (e: Event) => {
                     </div>
                 </div>
                 <div class="hidden bg-red-100"></div>
-                <button class="bg-purple-heart rounded-md p-2 hover:bg-white-lilac mt-5 md:w-fit md:px-4 md:text-xl" type="submit">
+                <button
+                    class="bg-purple-heart rounded-md p-2 hover:bg-white-lilac mt-5 md:w-fit md:px-4 md:text-xl"
+                    type="submit"
+                >
                     Submit
                 </button>
             </form>

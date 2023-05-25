@@ -1,5 +1,6 @@
 <script lang="ts">
 import type { LinkAttributes } from '../../utils/types'
+import socialMedia from '@/assets/data/socialMedia.json'
 import svgs from '../utils/svgs.vue'
 interface NavigationDesktopProps {
     links: LinkAttributes[]
@@ -40,21 +41,12 @@ defineProps<NavigationDesktopProps>()
                 </button>
                 <div class="flex gap-5 justify-center xl:ml-7 lg:ml-5 md:ml-3">
                     <a
-                        href="mailto:febaqui1008@gmail.com"
-                        class="p-1 hover:bg-purple-heart rounded-md"
-                        ><svgs class="w-4 h-4 lg:w-6 lg:h-6 xl:w-7 xl:h-7" name="email"
-                    /></a>
-                    <a
-                        class="p-1 hover:bg-purple-heart rounded-md"
-                        href="https://www.linkedin.com/in/fernando-barraza-quintero-76b974197/"
+                        v-for="link in socialMedia"
+                        :href="link.link"
                         target="_blank"
-                        ><svgs class="w-4 h-4 lg:w-6 lg:h-6 xl:w-7 xl:h-7" name="linkedin" />
-                    </a>
-                    <a
                         class="p-1 hover:bg-purple-heart rounded-md"
-                        href="https://github.com/fernandobq"
-                        target="_blank"
-                        ><svgs class="w-4 h-4 lg:w-6 lg:h-6 xl:w-7 xl:h-7" name="github"
+                    >
+                        <svgs class="w-4 h-4 lg:w-6 lg:h-6 xl:w-7 xl:h-7" :name="link.name"
                     /></a>
                 </div>
             </nav>
