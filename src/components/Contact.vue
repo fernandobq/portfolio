@@ -126,7 +126,7 @@ const handleSubmit = (e: Event) => {
             <form
                 ref="formHTML"
                 v-if="!oldCookie && !loading"
-                class="mt-10 flex flex-col gap-4"
+                class="mt-10 flex flex-col gap-4 max-w-[700px]"
                 method="post"
                 @submit="handleSubmit"
                 novalidate
@@ -183,7 +183,7 @@ const handleSubmit = (e: Event) => {
                     </div>
                 </div>
                 <div class="hidden bg-red-100"></div>
-                <button class="bg-purple-heart rounded-md p-2 hover:bg-white-lilac" type="submit">
+                <button class="bg-purple-heart rounded-md p-2 hover:bg-white-lilac mt-5 md:w-fit md:px-4 md:text-xl" type="submit">
                     Submit
                 </button>
             </form>
