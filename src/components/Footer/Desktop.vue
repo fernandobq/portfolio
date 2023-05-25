@@ -1,6 +1,7 @@
 <script lang="ts">
 import type { LinkAttributes, SocialMediaAttributes } from '../../utils/types'
 import svgs from '@/components/utils/svgs.vue'
+import { onMounted, onUnmounted } from 'vue'
 interface NavigationDesktopProps {
     links: LinkAttributes[]
     socialMedia: SocialMediaAttributes[]
@@ -11,6 +12,15 @@ interface NavigationDesktopProps {
 import useScroll from '@/utils/useScroll'
 const { handleScrollTo, scrollToTop } = useScroll()
 defineProps<NavigationDesktopProps>()
+
+const updateScroll = () => {}
+
+onMounted(() => {
+    window.addEventListener('scroll', updateScroll)
+})
+onUnmounted(() => {
+    window.removeEventListener('scroll', updateScroll)
+})
 </script>
 
 <template>

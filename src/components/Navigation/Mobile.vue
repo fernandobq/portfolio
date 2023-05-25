@@ -1,6 +1,7 @@
 <script lang="ts">
 import type { LinkAttributes } from '../../utils/types'
 import { ref } from 'vue'
+import svgs from '../utils/svgs.vue'
 
 interface NavigationMobileProps {
     links: LinkAttributes[]
@@ -71,12 +72,25 @@ const handleToggleMenu = (delay = false, sectionId = '') => {
             <div class="flex flex-col mt-6">
                 <button
                     @click="handleToggleMenu(true, link.sectionId)"
-                    class="text-2xl mr-10 h-fit hover:text-white normal-transition py-4 px-8 rounded-md text-center w-full text-white"
+                    class="text-2xl mr-10 h-fit hover:bg-purple-heart focus:bg-purple-heart active:bg-purple-heart normal-transition py-4 px-8 rounded-md text-center w-full text-white"
                     v-for="link in links"
                     :key="link.id"
                 >
                     {{ link.name }}
                 </button>
+                <div class="flex gap-5 justify-center absolute bottom-20 left-1/2 -translate-x-1/2">
+                    <a
+                        href="https://www.linkedin.com/in/fernando-barraza-quintero-76b974197/"
+                        target="_blank"
+                        ><svgs class="w-10 h-10" name="linkedin" />
+                    </a>
+                    <a href="https://github.com/fernandobq" target="_blank"
+                        ><svgs class="w-10 h-10" name="github"
+                    /></a>
+                    <a href="mailto:febaqui1008@gmail.com"
+                        ><svgs class="w-10 h-10" name="email"
+                    /></a>
+                </div>
             </div>
         </div>
     </div>

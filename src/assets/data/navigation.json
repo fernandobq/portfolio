@@ -1,15 +1,14 @@
 [
     {
-        "sectionId": "projects",
-        "name": "Projects",
-        "id": 3
-    },
-    {
         "sectionId": "about",
         "name": "About",
         "id": 2
     },
-
+    {
+        "sectionId": "projects",
+        "name": "Projects",
+        "id": 3
+    },
     {
         "sectionId": "contact",
         "name": "Contact",

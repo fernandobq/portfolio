@@ -121,23 +121,8 @@ const handleSubmit = (e: Event) => {
 
 <template>
     <div class="bg-haiti text-white">
-        <div class="max-w-1440 mx-auto px-5 py-10 md:px-20">
+        <div class="max-w-1440 mx-auto px-5 pt-10 pb-20 md:px-20">
             <h3 id="contact" class="text-3xl lg:text-5xl font-medium">Contact</h3>
-            <p class="text-lg mt-5">
-                If you wan to connect you can reach me on
-                <a
-                    class="hover:text-white-lilac text-purple-heart"
-                    href="https://www.linkedin.com/in/fernando-barraza-quintero-76b974197/"
-                    target="_blank"
-                    >LinkedIn</a
-                >, send me an
-                <a
-                    class="hover:text-white-lilac text-purple-heart"
-                    href="mailto:febaqui1008@gmail.com"
-                    >email</a
-                >
-                or simply use this form
-            </p>
             <form
                 ref="formHTML"
                 v-if="!oldCookie && !loading"
