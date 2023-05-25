@@ -1,14 +1,15 @@
 <script lang="ts">
-import { RouterLink } from 'vue-router'
-import type { LinkAttributes } from '../../utils/types'
+import type { LinkAttributes, SocialMediaAttributes } from '../../utils/types'
 import svgs from '@/components/utils/svgs.vue'
 interface NavigationDesktopProps {
     links: LinkAttributes[]
-    socialMedia: LinkAttributes[]
+    socialMedia: SocialMediaAttributes[]
 }
 </script>
 
 <script lang="ts" setup>
+import useScroll from '@/utils/useScroll'
+const { handleScrollTo, scrollToTop } = useScroll()
 defineProps<NavigationDesktopProps>()
 </script>
 
@@ -17,11 +18,11 @@ defineProps<NavigationDesktopProps>()
         class="max-w-1440 grid grid-cols-4 md:grid-cols-12 mx-auto gap-x-8 p-10 px-10 lg:px-20 md:pt-20 md:pb-10"
     >
         <div
-            class="md:col-span-2 md:col-start-1 col-span-4 hover:scale-105 transition-all h-fit self-center"
+            class="md:col-span-2 md:col-start-1 col-span-4 hover:scale-105 transition-all h-fit self-center flex flex-col items-center"
         >
-            <RouterLink class="w-fit" to="/">
+            <button class="w-fit" @click="scrollToTop()">
                 <svgs name="greenLogo" class="logo-init w-[90px] mx-auto h-fit" />
-            </RouterLink>
+            </button>
             <p class="text-center mt-4 text-sm">Fernando Barraza Quintero</p>
         </div>
         <nav
@@ -30,12 +31,12 @@ defineProps<NavigationDesktopProps>()
         >
             <ul class="inner-links flex flex-col gap-y-5">
                 <li v-for="link in links" :key="link.id">
-                    <RouterLink
+                    <button
                         class="text-lg py-2 px-4 rounded-md hover:text-green normal-transition"
-                        :to="link.link"
+                        @click="handleScrollTo(link.sectionId)"
                     >
                         {{ link.name }}
-                    </RouterLink>
+                    </button>
                 </li>
             </ul>
             <div class="separator md:h-full md:w-[1px] bg-white md:mx-10 h-[1px] w-1/2 my-5"></div>

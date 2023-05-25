@@ -1,0 +1,17 @@
+[
+    {
+        "link": "https://www.linkedin.com/in/fernando-barraza-quintero-76b974197/",
+        "name": "linkedin",
+        "id": 1
+    },
+    {
+        "link": "https://github.com/fernandobq",
+        "name": "github",
+        "id": 2
+    },
+    {
+        "link": "mailto:febaqui1008@gmail.com",
+        "name": "email",
+        "id": 3
+    }
+]

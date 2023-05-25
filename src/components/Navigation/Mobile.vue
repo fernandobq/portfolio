@@ -1,5 +1,4 @@
 <script lang="ts">
-import { RouterLink } from 'vue-router'
 import type { LinkAttributes } from '../../utils/types'
 import { ref } from 'vue'
 
