@@ -1,7 +1,7 @@
 const useScroll = () => {
     const handleScrollTo = (sectionId: string, top = 160) => {
         const section: HTMLElement = document.getElementById(sectionId) as HTMLElement
-
+        console.log(section.offsetTop)
         window.scrollTo({
             top: section.offsetTop - top,
             behavior: 'smooth'

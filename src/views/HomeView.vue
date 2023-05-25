@@ -2,12 +2,14 @@
 import Hero from '@/components/Hero.vue'
 import Projects from '@/components/Projects.vue'
 import Contact from '@/components/Contact.vue'
+import About from '@/components/About.vue';
 </script>
 
 <template>
     <div>
         <Hero />
         <Projects />
+        <About />
         <Contact />
     </div>
 </template>

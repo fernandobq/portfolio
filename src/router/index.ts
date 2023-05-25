@@ -9,21 +9,6 @@ const router = createRouter({
             name: 'home',
             component: HomeView
         },
-        {
-            path: '/about',
-            name: 'about',
-            component: () => import('../views/AboutView.vue')
-        },
-        {
-            path: '/projects',
-            name: 'projects',
-            component: () => import('../views/ProjectsView.vue')
-        },
-        {
-            path: '/contact',
-            name: 'contact',
-            component: () => import('../views/ContactView.vue')
-        }
     ],
     linkActiveClass: 'bg-purple-heart !text-white'
 })
