@@ -21,8 +21,8 @@ const emailVal = {
     regex: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i,
     error: 'The email needs to be a valid one'
 }
-const min20Val = { regex: /(.*[a-z]){20}/i, error: 'This field needs at least 20 characters' }
-const min10Val = { regex: /(.*[a-z]){10}/i, error: 'This field needs at least 10 characters' }
+const min20Val = { regex: /(.*[a-z]){18,}/i, error: 'This field needs at least 20 characters' }
+const min10Val = { regex: /(.*[a-z]){10,}/i, error: 'This field needs at least 10 characters' }
 const form = reactive<FormFields>({
     name: {
         value: '',
