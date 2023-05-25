@@ -2,6 +2,10 @@
 import type { LinkAttributes } from '../../utils/types'
 import socialMedia from '@/assets/data/socialMedia.json'
 import svgs from '../utils/svgs.vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
+gsap.registerPlugin(ScrollTrigger)
 interface NavigationDesktopProps {
     links: LinkAttributes[]
 }
@@ -10,7 +14,18 @@ interface NavigationDesktopProps {
 <script lang="ts" setup>
 import useScroll from '@/utils/useScroll'
 const { handleScrollTo, scrollToTop } = useScroll()
-defineProps<NavigationDesktopProps>()
+const props = defineProps<NavigationDesktopProps>()
+onMounted(() => {
+
+    props.links.forEach((link) => {
+        ScrollTrigger.create({
+            trigger: `.${link.sectionId}-section`,
+            start: 'top bottom-=100',
+            end: 'bottom bottom-=100',
+            toggleClass: { targets: `.${link.sectionId}-button`, className: 'bg-purple-heart' }
+        })
+    })
+})
 </script>
 
 <template>
@@ -34,6 +49,7 @@ defineProps<NavigationDesktopProps>()
                 <button
                     class="xl:text-2xl xl:ml-7 xl:py-4 xl:px-8 lg:text-xl lg:ml-5 lg:py-3 lg:px-6 md:text-l md:ml-3 md:py-2 md:px-4 h-fit hover:bg-purple-heart normal-transition rounded-md"
                     v-for="link in links"
+                    :class="`${link.sectionId}-button`"
                     :key="link.id"
                     @click="handleScrollTo(link.sectionId)"
                 >

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <section class="bg-haiti text-white">
+    <section class="bg-haiti text-white about-section">
         <div class="max-w-1440 mx-auto px-5 pt-20 md:px-20">
             <h3 id="about" class="text-3xl lg:text-5xl font-medium">About</h3>
             <div class="grid grid-cols-4 mt-10 lg:grid-cols-12 lg:gap-2 lg:place-content-center">

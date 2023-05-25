@@ -120,7 +120,7 @@ const handleSubmit = (e: Event) => {
 </script>
 
 <template>
-    <div class="bg-haiti text-white">
+    <div class="bg-haiti text-white contact-section">
         <div class="max-w-1440 mx-auto px-5 pt-10 pb-20 md:px-20">
             <h3 id="contact" class="text-3xl lg:text-5xl font-medium">Contact</h3>
             <form
