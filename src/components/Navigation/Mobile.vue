@@ -68,14 +68,14 @@ const handleToggleMenu = (delay = false) => {
                 ></div>
             </button>
             <div class="flex flex-col mt-6">
-                <RouterLink
+                <button
                     @click="handleToggleMenu(true)"
                     class="text-2xl mr-10 h-fit hover:text-white normal-transition py-4 px-8 rounded-md text-center w-full text-white"
                     v-for="link in links"
                     :key="link.id"
-                    :to="link.link"
-                    >{{ link.name }}
-                </RouterLink>
+                >
+                    {{ link.name }}
+                </button>
             </div>
         </div>
     </div>

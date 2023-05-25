@@ -7,33 +7,36 @@ interface NavigationDesktopProps {
 </script>
 
 <script lang="ts" setup>
+import useScroll from '@/utils/useScroll'
+const { handleScrollTo, scrollToTop } = useScroll()
 defineProps<NavigationDesktopProps>()
 </script>
 
 <template>
     <div
-        class="backdrop-blur-md bg-white-lilac-10 max-w-[1400px] w-[95%] grid grid-cols-12 mx-auto gap-x-8 py-5 px-10 lg:px-20 rounded-xl text-white"
+        class="backdrop-blur-md bg-white-lilac-10 max-w-1440 w-[95%] grid grid-cols-12 mx-auto gap-x-8 py-5 px-10 lg:px-20 rounded-xl text-white"
     >
         <div class="col-span-2 col-start-1 hover:scale-105 transition-all">
-            <RouterLink class="w-fit" to="/">
+            <button class="w-fit" @click="scrollToTop()">
                 <img
                     alt="Vue logo"
                     class="logo-init w-[90px] mx-auto"
                     src="@/assets/images/darkLogo.svg"
                 />
-            </RouterLink>
+            </button>
         </div>
         <nav
             ref="navigation"
             class="w-full col-span-7 col-end-13 flex justify-end items-center font-light"
         >
-            <RouterLink
+            <button
                 class="xl:text-2xl xl:ml-7 xl:py-4 xl:px-8 lg:text-xl lg:ml-5 lg:py-3 lg:px-6 md:text-l md:ml-3 md:py-2 md:px-4 h-fit hover:text-slate-500 normal-transition rounded-md"
-                v-for="(link, index) in links"
+                v-for="link in links"
                 :key="link.id"
-                :to="link.link"
-                >{{ link.name }}</RouterLink
+                @click="handleScrollTo(link.sectionId, 0)"
             >
+                {{ link.name }}
+            </button>
         </nav>
     </div>
 </template>
