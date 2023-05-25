@@ -48,7 +48,7 @@ const handleToggleMenu = (delay = false, sectionId = '') => {
                     <div
                         v-for="index in 3"
                         :key="index"
-                        class="w-full bg-white-lilac h-1 group-hover/hamburguer:bg-meteorite rounded-md"
+                        class="w-full bg-meteorite h-1 group-hover/hamburguer:bg-meteorite rounded-md"
                     ></div>
                 </div>
             </button>
