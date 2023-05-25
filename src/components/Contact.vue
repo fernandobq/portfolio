@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
 import emailjs from '@emailjs/browser'
-import Cookie from '@/utils/cookie'
+import useCookie from '@/utils/useCookie'
 const serviceId = import.meta.env.VITE_EMAIL_JS_SERVICE_ID
 const templateId = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID
 const publicId = import.meta.env.VITE_EMAIL_JS_PUBLIC_ID
-const { setCookie, getCookie } = Cookie()
+const { setCookie, getCookie } = useCookie()
 type InputAttributes = {
     value: string
     firstCheck: boolean
@@ -202,7 +202,7 @@ const handleSubmit = (e: Event) => {
                     Submit
                 </button>
             </form>
-            <div v-else-if="loading">Loading...</div>
+            <div v-else-if="loading" class="mt-10 text-sm">Loading...</div>
             <div v-else class="mt-10 text-sm">
                 Thanks for your message, I will reach out as soon as possible.
             </div>

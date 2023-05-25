@@ -1,4 +1,4 @@
-const cookie = () => {
+const useCookie = () => {
     const setCookie = (cname: string, cvalue: string, exdays: number) => {
         const d = new Date()
         d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000)
@@ -28,4 +28,4 @@ const cookie = () => {
     }
 }
 
-export default cookie
+export default useCookie
