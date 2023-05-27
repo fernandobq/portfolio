@@ -1,9 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-    <section class="bg-haiti text-white xl:mt-[320px] lg:mt-[270px] md:mt-[220px] mt-[150px]">
+    <section
+        class="about-section bg-haiti text-white xl:mt-[320px] lg:mt-[270px] md:mt-[220px] mt-[150px]"
+    >
         <div class="max-w-1440 mx-auto px-5 md:px-20">
-            <div class="lg:grid lg:grid-cols-12 lg:gap-8 lg:place-content-center">
+            <div id="about" class="lg:grid lg:grid-cols-12 lg:gap-8 lg:place-content-center">
                 <div class="xl:col-span-3 grid place-content-center xl:col-start-2 lg:col-span-4">
                     <img
                         src="@/assets/images/Profile.jpg"

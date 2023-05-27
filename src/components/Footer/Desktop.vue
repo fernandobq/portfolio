@@ -12,15 +12,6 @@ interface NavigationDesktopProps {
 import useScroll from '@/utils/useScroll'
 const { handleScrollTo, scrollToTop } = useScroll()
 defineProps<NavigationDesktopProps>()
-
-const updateScroll = () => {}
-
-onMounted(() => {
-    window.addEventListener('scroll', updateScroll)
-})
-onUnmounted(() => {
-    window.removeEventListener('scroll', updateScroll)
-})
 </script>
 
 <template>

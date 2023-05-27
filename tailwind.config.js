@@ -14,6 +14,11 @@ module.exports = {
         'white-lilac': '#C6ACFA',
         'green': '#04B200',
         'white-lilac-10': 'rgba(198, 172, 250, 0.09)',
+        'white-10': 'rgba(255, 255, 255, 0.1)',
+        'white-50': 'rgba(255, 255, 255, 0.5)',
+        'white-70': 'rgba(255, 255, 255, 0.7)',
+        'black-0': 'rgba(0, 0, 0, 0)',
+        'haiti-90': 'rgba(23, 12, 39, 0.87)',
       },
       maxWidth: {
         '1440': '1440px'
@@ -26,7 +31,7 @@ module.exports = {
       },
       fontSize: {
         hero: ['7rem', '7rem']
-      }
+      },
     },
   },
   plugins: [],

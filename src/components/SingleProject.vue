@@ -39,7 +39,7 @@ const handleModalClick = (e: MouseEvent) => {
     <article
         @click="toggleModal"
         :id="project.name"
-        class="w-full h-[400px] flex items-end px-8 py-5 relative after:content-[''] after:z-[1] after:inset-0 after:rounded-xl after:w-full after:h-full after:absolute lg:cursor-pointer group/card lg:overflow-hidden"
+        class="w-full h-[400px] flex items-end px-8 py-5 relative after:content-[''] after:z-[1] after:inset-0 after:rounded-xl after:w-full after:h-full after:absolute lg:cursor-pointer group/card lg:overflow-hidden after:bg-gradient-to-b from-black-0 from-0% to-haiti-90 to-90%"
     >
         <img
             class="rounded-xl absolute h-full w-full object-cover inset-0"
@@ -49,7 +49,7 @@ const handleModalClick = (e: MouseEvent) => {
         <div class="z-10 relative pointer-events-none">
             <p class="text-lg font-bold lg:text-2xl">{{ project.name }}</p>
             <p
-                class="text-sm mt-1 lg:text-base lg:opacity-0 lg:max-h-0 lg:mt-0 normal-transition group-hover/card:opacity-100 group-hover/card:max-h-60 group-hover/card:mt-4"
+                class="text-xs mt-1 lg:text-base lg:opacity-0 lg:max-h-0 lg:mt-0 normal-transition group-hover/card:opacity-100 group-hover/card:max-h-60 group-hover/card:mt-4"
             >
                 {{ project.description }}
             </p>
@@ -59,7 +59,7 @@ const handleModalClick = (e: MouseEvent) => {
                 <p
                     v-for="tag in project.technologies"
                     :key="tag"
-                    class="text-xs px-2 py-1 bg-slate-500 rounded-xl lg:text-sm lg:px-3 lg:py-1"
+                    class="text-xs px-3 py-1 lg:text-white-70 md:text-sm md:px-4 md:py-2 bg-meteorite rounded-[40px] border border-white-10"
                 >
                     {{ tag }}
                 </p>
@@ -140,9 +140,6 @@ const handleModalClick = (e: MouseEvent) => {
 </template>
 
 <style scoped>
-article:after {
-    background: linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 80%);
-}
 .v-enter-active,
 .v-leave-active {
     transition: opacity 500ms ease;
