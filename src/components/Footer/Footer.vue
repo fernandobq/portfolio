@@ -7,7 +7,9 @@ const socialMedia = socialMediaData
 </script>
 
 <template>
-    <footer class="bg-purple-heart w-full text-white">
+    <footer
+        class="bg-haiti w-full text-white xl:mt-[200px] lg:mt-[150px] mt-[100px] border-t border-t-white-10"
+    >
         <Desktop :links="links" :social-media="socialMedia" />
     </footer>
 </template>
