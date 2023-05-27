@@ -19,6 +19,9 @@ module.exports = {
         'white-70': 'rgba(255, 255, 255, 0.7)',
         'black-0': 'rgba(0, 0, 0, 0)',
         'haiti-90': 'rgba(23, 12, 39, 0.87)',
+        'purple-heart-20': 'rgba(134, 93, 213, 0.2)',
+        'meteorite-70': 'rgba(58, 30, 115, .7)',
+        'white-lilac-50': 'rgba(134, 93, 213, 0.5)'
       },
       maxWidth: {
         '1440': '1440px'

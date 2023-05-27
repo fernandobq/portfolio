@@ -120,13 +120,13 @@ const handleSubmit = (e: Event) => {
 </script>
 
 <template>
-    <div class="bg-haiti text-white contact-section">
-        <div class="max-w-1440 mx-auto px-5 pt-10 pb-20 md:px-20">
-            <h3 id="contact" class="text-3xl lg:text-5xl font-medium">Contact</h3>
+    <div class="bg-haiti text-white contact-section xl:mt-[200px] lg:mt-[150px] mt-[100px]">
+        <div class="max-w-1440 mx-auto px-5 md:px-20 flex flex-col items-center">
+            <h3 id="contact" class="text-3xl lg:text-5xl">Contact</h3>
             <form
                 ref="formHTML"
                 v-if="!oldCookie && !loading"
-                class="mt-10 flex flex-col gap-4 max-w-[700px]"
+                class="mt-10 flex flex-col gap-4 md:w-[510px] w-full"
                 method="post"
                 @submit="handleSubmit"
                 novalidate
@@ -134,13 +134,13 @@ const handleSubmit = (e: Event) => {
                 <div class="flex flex-col">
                     <label for="name">Name</label>
                     <input
-                        :class="form.name.error.size > 0 ? 'bg-red-100' : 'bg-white '"
                         v-model="form.name.value"
                         @input="validateInput"
                         @blur="validateInput"
                         id="name"
                         autocomplete="no"
-                        class="border-2 border-white text-haiti rounded-md mt-2 outline-0 p-2"
+                        placeholder="Name"
+                        class="border border-purple-heart-20 text-white rounded-md mt-2 outline-0 p-2 bg-purple-heart-20"
                         name="name"
                         type="text"
                     />
@@ -151,13 +151,13 @@ const handleSubmit = (e: Event) => {
                 <div class="flex flex-col">
                     <label for="email">Email</label>
                     <input
-                        :class="form.email.error.size > 0 ? 'bg-red-100' : 'bg-white '"
                         v-model="form.email.value"
                         @input="validateInput"
                         @blur="validateInput"
                         id="email"
+                        placeholder="Email"
                         autocomplete="off"
-                        class="border-2 border-white text-haiti rounded-md mt-2 outline-0 p-2"
+                        class="border border-purple-heart-20 text-white rounded-md mt-2 outline-0 p-2 bg-purple-heart-20"
                         name="email"
                         type="email"
                     />
@@ -168,13 +168,13 @@ const handleSubmit = (e: Event) => {
                 <div class="flex flex-col">
                     <label for="message">Message</label>
                     <textarea
-                        :class="form.message.error.size > 0 ? 'bg-red-100' : 'bg-white '"
                         @input="validateInput"
                         @blur="validateInput"
                         v-model="form.message.value"
-                        class="border-2 border-white text-haiti rounded-md mt-2 outline-0 p-2"
+                        class="border border-purple-heart-20 text-white rounded-md mt-2 outline-0 p-2 bg-purple-heart-20"
                         name="message"
                         id="message"
+                        placeholder="Message"
                         cols="20"
                         rows="10"
                     ></textarea>
@@ -182,9 +182,8 @@ const handleSubmit = (e: Event) => {
                         {{ Array.from(form.message.error).join('. ') }}
                     </div>
                 </div>
-                <div class="hidden bg-red-100"></div>
                 <button
-                    class="bg-purple-heart rounded-md p-2 hover:bg-white-lilac mt-5 md:w-fit md:px-4 md:text-xl"
+                    class="bg-meteorite border border-white-lilac-50 rounded-md p-2 hover:bg-meteorite-70 mt-5 md:px-4 text-lg"
                     type="submit"
                 >
                     Submit
