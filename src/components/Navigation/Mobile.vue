@@ -53,7 +53,7 @@ const handleToggleMenu = (delay = false, sectionId = '') => {
         </div>
         <div
             ref="menuOverlay"
-            class="menu-options-overley absolute w-screen h-screen bg-haiti right-[-20px] translate-x-full top-[-20px] normal-transition p-5"
+            class="menu-options-overley absolute w-screen h-screen bg-haiti right-[-20px] translate-x-full top-[-32px] normal-transition p-5"
         >
             <button
                 @click="handleToggleMenu(false)"
