@@ -5,7 +5,7 @@ import links from '@/assets/data/navigation.json'
 </script>
 
 <template>
-    <header class="w-full fixed top-5 z-30 normal-transition">
+    <header class="w-full fixed top-8 z-30 normal-transition">
         <Desktop class="desktop hidden md:grid" :links="links" />
         <Mobile class="mobile md:hidden" :links="links" />
     </header>

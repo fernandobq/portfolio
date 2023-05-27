@@ -13,7 +13,7 @@ module.exports = {
         'purple-heart': '#6332C2',
         'white-lilac': '#C6ACFA',
         'green': '#04B200',
-        'white-lilac-10': 'rgba(198, 172, 250, .65)',
+        'white-lilac-10': 'rgba(198, 172, 250, 0.09)',
       },
       maxWidth: {
         '1440': '1440px'

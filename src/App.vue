@@ -6,7 +6,7 @@ import HomeView from './views/HomeView.vue'
 
 <template>
     <Header />
-    <main class="mt-[125px]">
+    <main>
         <HomeView />
     </main>
     <Footer />

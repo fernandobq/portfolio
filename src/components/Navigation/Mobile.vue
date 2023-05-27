@@ -30,27 +30,23 @@ const handleToggleMenu = (delay = false, sectionId = '') => {
 
 <template>
     <div
-        class="backdrop-blur-md bg-white-lilac-10 w-mobile-modal grid grid-cols-4 mx-auto gap-x-8 py-5 px-5 items-center rounded-xl relative"
+        class="backdrop-blur-md bg-white-lilac-10 w-mobile-modal mx-auto py-5 px-5 rounded-xl relative flex justify-between"
     >
-        <div class="col-span-1 hover:scale-105 transition-all">
+        <div class="hover:scale-105 transition-all">
             <button @click="scrollToTop()">
-                <img
-                    alt="Vue logo"
-                    class="logo-init w-[90px] mx-auto"
-                    src="@/assets/images/darkLogo.svg"
-                />
+                <img alt="Vue logo" class="logo-init h-[40px]" src="@/assets/images/darkLogo.svg" />
             </button>
         </div>
-        <div class="col-span-1 col-end-5">
+        <div class="">
             <button
                 @click="handleToggleMenu(false)"
-                class="group/hamburguer w-10 h-10 ml-auto grid place-content-center rounded-md hover:bg-white outline-none"
+                class="group/hamburguer w-10 h-10 ml-auto grid place-content-center rounded-md hover:bg-white outline-none normal-transition"
             >
                 <div class="hamburguer w-8 ml-auto flex flex-col gap-y-1">
                     <div
                         v-for="index in 3"
                         :key="index"
-                        class="w-full bg-meteorite h-1 group-hover/hamburguer:bg-meteorite rounded-md"
+                        class="w-full bg-white h-1 group-hover/hamburguer:bg-meteorite rounded-md normal-transition"
                     ></div>
                 </div>
             </button>
