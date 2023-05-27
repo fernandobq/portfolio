@@ -1,11 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-    <section class="bg-haiti text-white about-section">
-        <div class="max-w-1440 mx-auto px-5 pt-20 md:px-20">
-            <h3 id="about" class="text-3xl lg:text-5xl font-medium">About</h3>
-            <div class="grid grid-cols-4 mt-10 lg:grid-cols-12 lg:gap-2 lg:place-content-center">
-                <div class="col-span-4 grid place-content-center">
+    <section class="bg-haiti text-white xl:mt-[320px] lg:mt-[270px] md:mt-[220px] mt-[150px]">
+        <div class="max-w-1440 mx-auto px-5 md:px-20">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 lg:place-content-center">
+                <div class="xl:col-span-3 grid place-content-center xl:col-start-2 lg:col-span-4">
                     <img
                         src="@/assets/images/Profile.jpg"
                         alt="Profile Picture"
@@ -13,7 +12,7 @@
                     />
                 </div>
                 <div
-                    class="col-span-4 flex flex-col gap-3 mt-10 text-sm max-w-[400px] mx-auto md:text-base md:max-w-[500px] lg:max-w-[unset] lg:col-span-7 lg:col-end-13 lg:mt-0 lg:text-lg xl:h-fit xl:self-center xl:text-xl"
+                    class="flex flex-col gap-3 mt-10 text-sm mx-auto md:text-base max-w-[500px] md:max-w-[600px] lg:max-w-[unset] lg:col-span-7 lg:col-end-13 xl:col-end-12 lg:mt-0 lg:text-lg xl:h-fit xl:self-center xl:pl-10"
                 >
                     <p>
                         Hi there! I'm Fernando, a passionate Fullstack Web Developer with almost
