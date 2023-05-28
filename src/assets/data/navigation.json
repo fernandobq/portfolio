@@ -5,6 +5,11 @@
         "id": 2
     },
     {
+        "sectionId": "tech",
+        "name": "Tech",
+        "id": 1
+    },
+    {
         "sectionId": "projects",
         "name": "Projects",
         "id": 3

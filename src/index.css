@@ -80,4 +80,8 @@ html {
     .normal-transition {
         @apply ease-in-out transition-all duration-300;
     }
+
+    .open-modal {
+        @apply !max-h-80 !opacity-100 mt-5;
+    }
 }

@@ -120,7 +120,7 @@ const handleSubmit = (e: Event) => {
 </script>
 
 <template>
-    <div class="bg-haiti text-white contact-section xl:mt-[200px] lg:mt-[150px] mt-[100px]">
+    <section class="bg-haiti text-white contact-section xl:mt-[200px] lg:mt-[150px] mt-[100px]">
         <div class="max-w-1440 mx-auto px-5 md:px-20 flex flex-col items-center">
             <h3 id="contact" class="text-3xl lg:text-5xl">Contact</h3>
             <form
@@ -194,5 +194,5 @@ const handleSubmit = (e: Event) => {
                 Thanks for your message, I will reach out as soon as possible.
             </div>
         </div>
-    </div>
+    </section>
 </template>

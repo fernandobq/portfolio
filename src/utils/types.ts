@@ -9,3 +9,10 @@ export type SocialMediaAttributes = {
     name: string
     id: number
 }
+
+export type TechnologyAttributes = {
+    name: string
+    icons: string[]
+    yearsOfExperience: number
+    description: string
+}

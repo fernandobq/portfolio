@@ -110,7 +110,7 @@ const handleModalClick = (e: MouseEvent) => {
                             <p
                                 v-for="tag in project.technologies"
                                 :key="tag"
-                                class="text-xs px-2 py-1 bg-slate-500 rounded-xl lg:text-sm lg:px-4 xl:text-base xl:py-[2px]"
+                                class="text-xs px-3 py-1 lg:text-white-70 md:text-sm md:px-4 md:py-2 bg-meteorite rounded-[40px] border border-white-10"
                             >
                                 {{ tag }}
                             </p>

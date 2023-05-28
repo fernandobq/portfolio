@@ -58,5 +58,15 @@
         "workDone": "Created the articles and publications structure for the blog post of the site, and also created a vast of components used in the site.",
         "github": "",
         "description": "Healthcare company focused on saving lives and improving health by pioneering new technologies for early cancer detection."
+    },
+    {
+        "id": 7,
+        "name": "Butchershop Website",
+        "link": "https://www.butchershop.co/",
+        "technologies": ["Statamic", "Vue", "Sass", "Foundation", "gsap", "Laravel"],
+        "image": "/projects/bc3.gif",
+        "workDone": "Worked on the animations for the complete site, every component has a different interaction so I got to learn a lot about gsap system, and also used Statamic CMS over Laravel to create the components and routes, basically the whole structure",
+        "github": "",
+        "description": "We help brands and businesses break into emerging sectors or break out to lead them."
     }
 ]
