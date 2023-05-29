@@ -12,7 +12,7 @@ export type SocialMediaAttributes = {
 
 export type TechnologyAttributes = {
     name: string
-    icons: string[]
+    icon: string
     yearsOfExperience: number
     description: string
 }

@@ -1,115 +1,115 @@
 [
     {
         "name": "HTML",
-        "icons": ["html"],
+        "icon": "html",
         "yearsOfExperience": 2019,
         "description": "First code language ever learned related to the coding of web pages and applications."
     },
     {
         "name": "CSS",
-        "icons": ["css"],
+        "icon": "css",
         "yearsOfExperience": 2019,
         "description": "Second code language ever learned related to the coding of web pages and applications, I see myself as very profecient with this code language, using the CSS Grid and Flexbox."
     },
     {
         "name": "JavaScript",
-        "icons": ["js"],
+        "icon": "js",
         "yearsOfExperience": 2019,
         "description": "Third code language learned in the beggining of my career and realized at the moment that this was the language that I needed to excel to become a better developer."
     },
     {
-        "name": "Laravel/PHP",
-        "icons": ["laravel", "php"],
+        "name": "Laravel",
+        "icon": "laravel",
         "yearsOfExperience": 2020,
-        "description": "This framework and language were learned at the same time at my first job, from there I made 2 more web apps using this tech stack for my backend and creation of an API."
+        "description": "This framework and language (php) were learned at the same time at my first job, from there I made 2 more web apps using this tech stack for my backend and creation of an API."
     },
     {
         "name": "Vue",
-        "icons": ["vue"],
+        "icon": "vue",
         "yearsOfExperience": 2020,
         "description": "At my first job, I started learning and using Vue for a client with an e-commerce section, it was my first entry project to the world of reactivity. Nowadays I consider myself pretty solid with this technologie and used it in many projects."
     },
     {
         "name": "MySQL",
-        "icons": ["mysql"],
+        "icon": "mysql",
         "yearsOfExperience": 2020,
         "description": "I started using this relational database managament system with my projects in Laravel, I learned about models, migrations, relations, cascades and more things about the DB managaement."
     },
     {
         "name": "Foundation",
-        "icons": ["foundation"],
+        "icon": "foundation",
         "yearsOfExperience": 2020,
         "description": "I feel pretty comfortable using this framework, I have used it in many of my projects and it helps me a lot with the responsiveness of my sites."
     },
     {
         "name": "Sass",
-        "icons": ["sass"],
+        "icon": "sass",
         "yearsOfExperience": 2020,
         "description": "Used this styles with foundation for almost all my projects. It is so useful to have your varaibles in a file and use them thorughout the whole projects. Also used loops to create several classes at a time."
     },
     {
         "name": "WordPress",
-        "icons": ["wordpress"],
+        "icon": "wordpress",
         "yearsOfExperience": 2020,
         "description": "This was my first CMS to ever used in my career, I used throught my career to create many sites using the flexible content, ACF and many other tools, such as Algolia and GSAP."
     },
     {
         "name": "GSAP",
-        "icons": ["gsap"],
+        "icon": "gsap",
         "yearsOfExperience": 2020,
         "description": "First used with wordpress to add simple fade in animations, but for the butchershop.co site, my team and I went beyond and used it for more things than that like parallax, letters animations, X-axis scrolling and more. Used it for my hero animation here too."
     },
     {
         "name": "Node.js",
-        "icons": ["node"],
+        "icon": "node",
         "yearsOfExperience": 2021,
         "description": "Worked on a project that had an app made with node, so I had to learn more about it to fixed some bugs and made refactors to the app, that later we transcribed to Vue. This was Priio app."
     },
     {
         "name": "React",
-        "icons": ["react"],
+        "icon": "react",
         "yearsOfExperience": 2021,
         "description": "Learned on my freetimes at the time there were no projects in React in my company, later I proposed to work on a internal project with it, and finally helped in a web app and BAM project with Next.JS"
     },
     {
         "name": "Algolia",
-        "icons": ["algolia"],
+        "icon": "algolia",
         "yearsOfExperience": 2021,
         "description": "Learned to use it for a project with a big database, to make the request almost instantly. The RockCreek Group project was"
     },
     {
         "name": "Statamic",
-        "icons": ["statamic"],
+        "icon": "statamic",
         "yearsOfExperience": 2021,
         "description": "CMS mounted over laravel used for the Butchershop.co website. Capable of creating blueprints of elements, it is a good CMS to make really good custom components with Vue for the frontend"
     },
     {
         "name": "Nuxt.JS",
-        "icons": ["nuxt"],
+        "icon": "nuxt",
         "yearsOfExperience": 2022,
         "description": "This framework over Vue3 was used for the version Vue of our BAM system, as per request of our client. Used in only that project but got the hang of it"
     },
     {
         "name": "Strapi",
-        "icons": ["strapi"],
+        "icon": "strapi",
         "yearsOfExperience": 2022,
         "description": "Headless CMS used for the backend part of the BAM project. We needed a headless CMS and we found this brilliant compact and easy to use CMS, planning on using it for a future project"
     },
     {
         "name": "MongoDB",
-        "icons": ["mongo"],
+        "icon": "mongo",
         "yearsOfExperience": 2023,
         "description": "Learning and being studying it, beacuse I have familiarity with MySql a SQL DB I wanted to learn about a No-SQL DB, planning on using it on a personal project for a friend with a company. I will add the project and my experience as soon as I do the project"
     },
     {
         "name": "Express",
-        "icons": ["express"],
+        "icon": "express",
         "yearsOfExperience": 2023,
         "description": "Started studying and using it for a personal project, I will add it as soon as I finish it. The project has the MERN stack"
     },
     {
         "name": "TailwindCSS",
-        "icons": ["tailwind"],
+        "icon": "tailwind",
         "yearsOfExperience": 2023,
         "description": "Learned about it in a brief project where I helped with logic bugs, and decided to use it for my portfolio"
     }

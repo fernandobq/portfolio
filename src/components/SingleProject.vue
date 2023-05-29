@@ -74,7 +74,7 @@ const handleModalClick = (e: MouseEvent) => {
                     v-if="modalClicked === project.name"
                 >
                     <div
-                        class="modal-card fixed max-h-[60%] overflow-y-auto z-20 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10 md:w-[500px] md:max-h-[70% lg:w-[650px] lg:px-12 lg:py-14 xl:w-[800px] xl:max-h-[80%] xl:px-14 xl:py-16"
+                        class="modal-card fixed z-20 max-h-[60%] overflow-y-auto top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10 md:w-[500px] md:max-h-[70% lg:w-[650px] lg:px-12 lg:py-14 xl:w-[800px] xl:max-h-[80%] xl:px-14 xl:py-16"
                     >
                         <button
                             @click="toggleModal"
