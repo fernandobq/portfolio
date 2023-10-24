@@ -6,10 +6,10 @@ import Modal from './Modal.vue'
 import type { TechnologyAttributes } from '@/utils/types'
 
 const openModal = ref<boolean>(false)
-const selectedTechnologie = ref<TechnologyAttributes>()
+const selectedTechnology = ref<TechnologyAttributes>()
 
-const handleOpenModal = (technologie: TechnologyAttributes) => {
-    selectedTechnologie.value = technologie
+const handleOpenModal = (technology: TechnologyAttributes) => {
+    selectedTechnology.value = technology
     openModal.value = true
 }
 </script>
@@ -43,22 +43,22 @@ const handleOpenModal = (technologie: TechnologyAttributes) => {
             modal-classes="max-h-[60%] overflow-y-auto top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10 md:w-[500px] md:max-h-[70%] lg:w-[650px] lg:px-12 lg:py-14 xl:max-h-[80%] xl:px-14 xl:py-16"
             @closeModal="() => (openModal = false)"
         >
-            <div v-if="selectedTechnologie">
+            <div v-if="selectedTechnology">
                 <div class="flex items-center gap-5">
                     <div class="flex items-center w-10 h-10 pointer-events-non md:w-14 md:h-14 lg:w-16 lg:h-16">
-                        <svgs class="w-full h-full" :name="selectedTechnologie.icon" />
+                        <svgs class="w-full h-full" :name="selectedTechnology.icon" />
                     </div>
                     <h3 class="text-2xl font-medium">
-                        {{ selectedTechnologie.name }}
+                        {{ selectedTechnology.name }}
                     </h3>
                 </div>
                 <div class="mt-5">
                     <p
                         class="text-xs px-3 py-1 lg:text-white-70 md:text-sm md:px-4 md:py-2 bg-meteorite rounded-[40px] border border-white-10 w-fit"
                     >
-                        Since {{ selectedTechnologie.yearsOfExperience }}
+                        Since {{ selectedTechnology.yearsOfExperience }}
                     </p>
-                    <p class="mt-5 text-lg">{{ selectedTechnologie.description }}</p>
+                    <p class="mt-5 text-lg">{{ selectedTechnology.description }}</p>
                 </div>
             </div>
         </Modal>
