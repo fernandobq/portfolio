@@ -32,7 +32,7 @@ const backEndTechnologies = [
     'mysql',
     'strapi',
     'wordpress',
-    'statamic',
+    'graphql',
     'algolia'
 ]
 
