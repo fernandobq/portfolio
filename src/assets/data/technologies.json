@@ -72,6 +72,12 @@
         "description": "Learned on my freetimes at the time there were no projects in React in my company, later I proposed to work on a internal project with it, and finally helped in a web app and BAM project with Next.JS"
     },
     {
+        "name": "Typescript",
+        "icon": "typescript",
+        "yearsOfExperience": 2021,
+        "description": "Learned by practice and projects that needed to be done with, all the Nuxt projects where done by using ts and the main language, and most recently I participated in a project in Next.js where everything was done with this language"
+    },
+    {
         "name": "Algolia",
         "icon": "algolia",
         "yearsOfExperience": 2021,
@@ -112,5 +118,17 @@
         "icon": "tailwind",
         "yearsOfExperience": 2023,
         "description": "Learned about it in a brief project where I helped with logic bugs, and decided to use it for my portfolio"
+    },
+    {
+        "name": "Next.js",
+        "icon": "next",
+        "yearsOfExperience": 2023,
+        "description": "Started using this framework for a project for the different tools that it has, and helped me to do SSR, and integrate different tools"
+    },
+    {
+        "name": "GraphQL",
+        "icon": "graphql",
+        "yearsOfExperience": 2023,
+        "description": "Used with Strapi to make the request cleaner and enabled the team to only get exactly the data that we needed"
     }
 ]
