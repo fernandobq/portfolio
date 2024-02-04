@@ -130,5 +130,17 @@
         "icon": "graphql",
         "yearsOfExperience": 2023,
         "description": "Used with Strapi to make the request cleaner and enabled the team to only get exactly the data that we needed"
+    },
+    {
+        "name": "Airtable",
+        "icon": "airtable",
+        "yearsOfExperience": 2021,
+        "description": "Learned about scripts and automations for a HR project in one company that I had work in. In January 2024 I created an extension script for a company to collect data in the production process"
+    },
+    {
+        "name": "Zapier",
+        "icon": "zapier",
+        "yearsOfExperience": 2021,
+        "description": "Learned how to use it with Airtable for an internal project for the HR department to send invitations to the interviewees and interviewers"
     }
 ]
