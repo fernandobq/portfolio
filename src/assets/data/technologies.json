@@ -108,16 +108,16 @@
         "description": "Learning and being studying it, beacuse I have familiarity with MySql a SQL DB I wanted to learn about a No-SQL DB, planning on using it on a personal project for a friend with a company. I will add the project and my experience as soon as I do the project"
     },
     {
-        "name": "Express",
-        "icon": "express",
-        "yearsOfExperience": 2023,
-        "description": "Started studying and using it for a personal project, I will add it as soon as I finish it. The project has the MERN stack"
-    },
-    {
         "name": "TailwindCSS",
         "icon": "tailwind",
         "yearsOfExperience": 2023,
         "description": "Learned about it in a brief project where I helped with logic bugs, and decided to use it for my portfolio"
+    },
+    {
+        "name": "Express",
+        "icon": "express",
+        "yearsOfExperience": 2023,
+        "description": "Started studying and using it for a personal project, I will add it as soon as I finish it. The project has the MERN stack"
     },
     {
         "name": "Next.js",
