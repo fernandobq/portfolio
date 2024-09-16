@@ -84,7 +84,7 @@
         "name": "Brownkind",
         "link": "https://brownkind.com/",
         "technologies": ["Liquid", "React", "Typescript", "Sass", "GraphQL", "Shopify"],
-        "image": "/projects/AppFire.gif",
+        "image": "/projects/Brownkind.gif",
         "workDone": "I worked in this project to reskin the company's webpage, which significantly boosted sales within the first month of the redesign. I implemented updates using React in combination with Liquid, and integrated a Vite project within the Shopify theme to optimize and use minified files for better performance.",
         "github": "",
         "description": "We Exist to Celebrate and Preserve Melanin-Rich Skin"
