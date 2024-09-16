@@ -1,10 +1,8 @@
-<script lang="ts">
+<script lang="ts" setup>
 interface svgsProps {
     name: string
     hoverColor?: string
 }
-</script>
-<script lang="ts" setup>
 defineProps<svgsProps>()
 </script>
 <template>
