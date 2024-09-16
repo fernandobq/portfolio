@@ -1,7 +1,5 @@
 <script lang="ts">
 import { ref } from 'vue'
-import svgs from './utils/svgs.vue'
-import Svgs from './utils/svgs.vue'
 const window = document.querySelector('html')
 const modalClicked = ref<string>('')
 interface ProjectProps {

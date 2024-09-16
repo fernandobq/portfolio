@@ -142,5 +142,11 @@
         "icon": "zapier",
         "yearsOfExperience": 2021,
         "description": "Learned how to use it with Airtable for an internal project for the HR department to send invitations to the interviewees and interviewers"
+    },
+    {
+        "name": "Shopify",
+        "icon": "shopify",
+        "yearsOfExperience": 2023,
+        "description": "Gained experience in creating custom Shopify themes and utilized the Liquid templating language to develop more interactive and dynamic online stores"
     }
 ]

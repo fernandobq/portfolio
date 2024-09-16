@@ -78,5 +78,15 @@
         "workDone": "Contributed to this project since the beggining stages of the project. Helped on the decision of the stack for the project. Created a third of all the components used in the website and also helped with the integration with Typesense and GraphQL. Used the SSR capability of Next to make this site run flawlessly and got 95> grades from google lightohuse",
         "github": "",
         "description": "Enterprise collaboration solutions built for your team, ecosystem, and best work — because when work flows, productivity does, too."
+    },
+    {
+        "id": 9,
+        "name": "Brownkind",
+        "link": "https://brownkind.com/",
+        "technologies": ["Liquid", "React", "Typescript", "Sass", "GraphQL", "Shopify"],
+        "image": "/projects/Brownkind.gif",
+        "workDone": "I worked in this project to reskin the company's webpage, which significantly boosted sales within the first month of the redesign. I implemented updates using React in combination with Liquid, and integrated a Vite project within the Shopify theme to optimize and use minified files for better performance.",
+        "github": "",
+        "description": "We Exist to Celebrate and Preserve Melanin-Rich Skin"
     }
 ]
