@@ -1,5 +1,7 @@
 <script lang="ts">
 import { ref } from 'vue'
+import svgs from './utils/svgs.vue'
+import Svgs from './utils/svgs.vue'
 const window = document.querySelector('html')
 const modalClicked = ref<string>('')
 interface ProjectProps {
@@ -72,7 +74,7 @@ const handleModalClick = (e: MouseEvent) => {
                     v-if="modalClicked === project.name"
                 >
                     <div
-                        class="modal-card fixed z-20 max-h-[60%] overflow-y-auto top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10 md:w-[500px] md:max-h-[70% lg:w-[650px] lg:px-12 lg:py-14 xl:w-[800px] xl:max-h-[80%] xl:px-14 xl:py-16"
+                        class="modal-card fixed z-20 max-h-[60%] overflow-y-auto overflow-x-hidden top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10 md:w-[500px] md:max-h-[70% lg:w-[650px] lg:px-12 lg:py-14 xl:w-[800px] xl:max-h-[80%] xl:px-14 xl:py-16"
                     >
                         <button
                             @click="toggleModal"
@@ -104,7 +106,7 @@ const handleModalClick = (e: MouseEvent) => {
                         <p class="text-lg font-medium mt-4 lg:text-xl lg:mt-8 xl:text-2xl">
                             Technologies
                         </p>
-                        <div class="mt-1 flex gap-2 lg:mt-2">
+                        <div class="mt-1 flex gap-2 lg:mt-2 flex-wrap">
                             <p
                                 v-for="tag in project.technologies"
                                 :key="tag"
