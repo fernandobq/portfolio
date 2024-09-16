@@ -1,12 +1,10 @@
-<script lang="ts">
+<script lang="ts" setup>
+import { watch } from 'vue'
+
 interface ModalProps {
     openModal: boolean
     modalClasses: string
 }
-</script>
-
-<script lang="ts" setup>
-import { watch } from 'vue'
 
 const props = defineProps<ModalProps>()
 const window = document.querySelector('html')
@@ -24,7 +22,7 @@ const handleModalClick = (e: MouseEvent) => {
 }
 watch(
     () => props.openModal,
-    () => window?.classList.toggle('overflow-hidden')
+    () => window?.classList.toggle('overflow-y-hidden')
 )
 </script>
 
