@@ -1,14 +1,10 @@
-<script lang="ts">
+<script lang="ts" setup>
 import type { LinkAttributes, SocialMediaAttributes } from '../../utils/types'
 import svgs from '@/components/utils/svgs.vue'
-import { onMounted, onUnmounted } from 'vue'
 interface NavigationDesktopProps {
     links: LinkAttributes[]
     socialMedia: SocialMediaAttributes[]
 }
-</script>
-
-<script lang="ts" setup>
 import useScroll from '@/utils/useScroll'
 const { handleScrollTo, scrollToTop } = useScroll()
 defineProps<NavigationDesktopProps>()
@@ -37,6 +33,6 @@ defineProps<NavigationDesktopProps>()
             </li>
         </ul>
         <p class="mt-8 text-white-50">Fernando Barraza Quintero</p>
-        <p class="text-white-50 mt-4">© 2023 febaqui. ALL RIGHTS RESERVED</p>
+        <p class="text-white-50 mt-4">© 2024 febaqui. ALL RIGHTS RESERVED</p>
     </div>
 </template>
