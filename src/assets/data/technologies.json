@@ -154,5 +154,11 @@
         "icon": "shopify",
         "yearsOfExperience": 2023,
         "description": "Gained experience in creating custom Shopify themes and utilized the Liquid templating language to develop more interactive and dynamic online stores"
+    },
+    {
+        "name": "Framer",
+        "icon": "framer",
+        "yearsOfExperience": 2024,
+        "description": "Started working with nocode frameworks this year for a landing page for Wing.com, spoiler alert we used code components at the end, but still a pretty solid tool"
     }
 ]
