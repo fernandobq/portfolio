@@ -567,4 +567,10 @@ defineProps<svgsProps>()
         <path d="M103 .25v102.5h51.25c28.305 0 51.25-22.945 51.25-51.25S182.555.25 154.25.25H103Z" fill="#FF7262"/>
         <path d="M.5 51.5c0 28.305 22.945 51.25 51.25 51.25H103V.25H51.75C23.445.25.5 23.195.5 51.5Z" fill="#F24E1E"/>
     </svg>
+    <svg v-else-if="name === 'framer'" width="800" height="800" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14Z" fill="#fff"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20.334h7V27l-7-6.666Z" fill="#05F"/>
+        <path d="M16 13.666H9v6.667h14l-7-6.666Z" fill="#0AF"/>
+        <path d="m9 7 7 6.667h7V7H9Z" fill="#8DF"/>
+    </svg>
 </template>
