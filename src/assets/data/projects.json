@@ -88,5 +88,15 @@
         "workDone": "I worked in this project to reskin the company's webpage, which significantly boosted sales within the first month of the redesign. I implemented updates using React in combination with Liquid, and integrated a Vite project within the Shopify theme to optimize and use minified files for better performance.",
         "github": "",
         "description": "We Exist to Celebrate and Preserve Melanin-Rich Skin"
+    },
+    {
+        "id": 10,
+        "name": "Wing",
+        "link": "https://wing.com/",
+        "technologies": ["Framer", "React"],
+        "image": "/projects/Wing.gif",
+        "workDone": "First project worked in Framer. This is a collaboration with Study Hall and Wing a company by Alphabet. We revamped the commercial site of wing with cool animations and some interesting animations, worked with png sequences and timed animations, I really enjoyed it.",
+        "github": "",
+        "description": "Delivery, elevated."
     }
 ]
