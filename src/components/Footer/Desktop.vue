@@ -33,6 +33,6 @@ defineProps<NavigationDesktopProps>()
             </li>
         </ul>
         <p class="mt-8 text-white-50">Fernando Barraza Quintero</p>
-        <p class="text-white-50 mt-4">© 2024 febaqui. ALL RIGHTS RESERVED</p>
+        <p class="text-white-50 mt-4">© 2025 febaqui. ALL RIGHTS RESERVED</p>
     </div>
 </template>
