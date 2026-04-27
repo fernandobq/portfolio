@@ -1,164 +1,254 @@
 [
     {
-        "name": "HTML",
-        "icon": "html",
+        "name": "PHP",
+        "icon": "php",
+        "cat": "Languages",
+        "since": 2019,
+        "blurb": "First language learned in my career, used in many projects and frameworks.",
         "yearsOfExperience": 2019,
-        "description": "First code language ever learned related to the coding of web pages and applications."
+        "description": "First language learned in my career, used in many projects and frameworks. I feel comfortable using this language and it is my main language for backend development."
     },
     {
-        "name": "CSS",
-        "icon": "css",
+        "name": "TypeScript",
+        "icon": "typescript",
+        "cat": "Languages",
+        "since": 2019,
+        "blurb": "Used as the main language across recent Next.js, Nuxt, and SaaS projects.",
         "yearsOfExperience": 2019,
-        "description": "Second code language ever learned related to the coding of web pages and applications, I see myself as very profecient with this code language, using the CSS Grid and Flexbox."
+        "description": "Learned by practice and projects that needed to be done with, all the Nuxt projects were done using TS as the main language, and most recently I participated in a project in Next.js where everything was done with this language."
     },
     {
         "name": "JavaScript",
         "icon": "js",
+        "cat": "Languages",
+        "since": 2019,
+        "blurb": "The bedrock. Comfortable from vanilla DOM up through the latest ES proposals.",
         "yearsOfExperience": 2019,
-        "description": "Third code language learned in the beggining of my career and realized at the moment that this was the language that I needed to excel to become a better developer."
+        "description": "Third code language learned in the beginning of my career. Realized at the moment that this was the language I needed to excel to become a better developer."
     },
     {
-        "name": "Laravel",
-        "icon": "laravel",
+        "name": "HTML",
+        "icon": "html",
+        "cat": "Languages",
+        "since": 2019,
+        "blurb": "Foundation of every page. Semantic markup for accessibility and SEO.",
         "yearsOfExperience": 2019,
-        "description": "This framework and language (php) were learned at the same time at my first job, from there I made 2 more web apps using this tech stack for my backend and creation of an API."
-    },
-    {
-        "name": "Vue",
-        "icon": "vue",
-        "yearsOfExperience": 2019,
-        "description": "At my first job, I started learning and using Vue for a client with an e-commerce section, it was my first entry project to the world of reactivity. Nowadays I consider myself pretty solid with this technologie and used it in many projects."
-    },
-    {
-        "name": "MySQL",
-        "icon": "mysql",
-        "yearsOfExperience": 2019,
-        "description": "I started using this relational database managament system with my projects in Laravel, I learned about models, migrations, relations, cascades and more things about the DB managaement."
-    },
-    {
-        "name": "Foundation",
-        "icon": "foundation",
-        "yearsOfExperience": 2019,
-        "description": "I feel pretty comfortable using this framework, I have used it in many of my projects and it helps me a lot with the responsiveness of my sites."
-    },
-    {
-        "name": "Sass",
-        "icon": "sass",
-        "yearsOfExperience": 2019,
-        "description": "Used this styles with foundation for almost all my projects. It is so useful to have your varaibles in a file and use them thorughout the whole projects. Also used loops to create several classes at a time."
-    },
-    {
-        "name": "WordPress",
-        "icon": "wordpress",
-        "yearsOfExperience": 2019,
-        "description": "This was my first CMS to ever used in my career, I used throught my career to create many sites using the flexible content, ACF and many other tools, such as Algolia and GSAP."
-    },
-    {
-        "name": "GSAP",
-        "icon": "gsap",
-        "yearsOfExperience": 2019,
-        "description": "First used with wordpress to add simple fade in animations, but for the butchershop.co site, my team and I went beyond and used it for more things than that like parallax, letters animations, X-axis scrolling and more. Used it for my hero animation here too."
-    },
-    {
-        "name": "Node.js",
-        "icon": "node",
-        "yearsOfExperience": 2019,
-        "description": "Worked on a project that had an app made with node, so I had to learn more about it to fixed some bugs and made refactors to the app, that later we transcribed to Vue. This was Priio app."
+        "description": "First code language ever learned related to the coding of web pages and applications."
     },
     {
         "name": "React",
         "icon": "react",
+        "cat": "Frontend",
+        "since": 2019,
+        "blurb": "Self-taught initially, then production at BAM, AppFire, Wing, Brownkind.",
         "yearsOfExperience": 2019,
-        "description": "Learned on my freetimes at the time there were no projects in React in my company, later I proposed to work on a internal project with it, and finally helped in a web app and BAM project with Next.JS"
+        "description": "Learned on my free time when there were no projects in React in my company, later proposed to work on an internal project with it, and finally helped in a web app and the BAM project with Next.js."
     },
     {
-        "name": "Typescript",
-        "icon": "typescript",
+        "name": "Vue",
+        "icon": "vue",
+        "cat": "Frontend",
+        "since": 2019,
+        "blurb": "First reactivity framework. Solid across Vue 2 → 3, Pinia, Composition API.",
         "yearsOfExperience": 2019,
-        "description": "Learned by practice and projects that needed to be done with, all the Nuxt projects where done by using ts and the main language, and most recently I participated in a project in Next.js where everything was done with this language"
-    },
-    {
-        "name": "Figma",
-        "icon": "figma",
-        "yearsOfExperience": 2019,
-        "description": "Learned to use this app to create some wireframes and used on my day to day to as the source of true to create awesome looking websites and web apps"
-    },
-    {
-        "name": "Algolia",
-        "icon": "algolia",
-        "yearsOfExperience": 2020,
-        "description": "Learned to use it for a project with a big database, to make the request almost instantly. The RockCreek Group project was"
-    },
-    {
-        "name": "Statamic",
-        "icon": "statamic",
-        "yearsOfExperience": 2020,
-        "description": "CMS mounted over laravel used for the Butchershop.co website. Capable of creating blueprints of elements, it is a good CMS to make really good custom components with Vue for the frontend"
-    },
-    {
-        "name": "Nuxt.JS",
-        "icon": "nuxt",
-        "yearsOfExperience": 2021,
-        "description": "This framework over Vue3 was used for the version Vue of our BAM system, as per request of our client. Used in only that project but got the hang of it"
-    },
-    {
-        "name": "Strapi",
-        "icon": "strapi",
-        "yearsOfExperience": 2021,
-        "description": "Headless CMS used for the backend part of the BAM project. We needed a headless CMS and we found this brilliant compact and easy to use CMS, planning on using it for a future project"
-    },
-    {
-        "name": "Airtable",
-        "icon": "airtable",
-        "yearsOfExperience": 2021,
-        "description": "Learned about scripts and automations for a HR project in one company that I had work in. In January 2024 I created an extension script for a company to collect data in the production process"
-    },
-    {
-        "name": "Zapier",
-        "icon": "zapier",
-        "yearsOfExperience": 2021,
-        "description": "Learned how to use it with Airtable for an internal project for the HR department to send invitations to the interviewees and interviewers"
-    },
-    {
-        "name": "MongoDB",
-        "icon": "mongo",
-        "yearsOfExperience": 2022,
-        "description": "Learning and being studying it, beacuse I have familiarity with MySql a SQL DB I wanted to learn about a No-SQL DB, planning on using it on a personal project for a friend with a company. I will add the project and my experience as soon as I do the project"
-    },
-    {
-        "name": "TailwindCSS",
-        "icon": "tailwind",
-        "yearsOfExperience": 2022,
-        "description": "Learned about it in a brief project where I helped with logic bugs, and decided to use it for my portfolio"
-    },
-    {
-        "name": "Express",
-        "icon": "express",
-        "yearsOfExperience": 2022,
-        "description": "Started studying and using it for a personal project, I will add it as soon as I finish it. The project has the MERN stack"
+        "description": "At my first job, I started learning and using Vue for a client with an e-commerce section. It was my first entry into the world of reactivity. Nowadays I consider myself very solid with this technology."
     },
     {
         "name": "Next.js",
         "icon": "next",
+        "cat": "Frontend",
+        "since": 2022,
+        "blurb": "SSR, SSG, app-router. AppFire pulled 95+ Lighthouse with this stack.",
         "yearsOfExperience": 2022,
-        "description": "Started using this framework for a project for the different tools that it has, and helped me to do SSR, and integrate different tools"
+        "description": "Started using this framework for a project using its different capabilities — helped me do SSR, integrate different tools, and achieve excellent performance scores."
     },
     {
-        "name": "GraphQL",
-        "icon": "graphql",
-        "yearsOfExperience": 2022,
-        "description": "Used with Strapi to make the request cleaner and enabled the team to only get exactly the data that we needed"
+        "name": "Nuxt.JS",
+        "icon": "nuxt",
+        "cat": "Frontend",
+        "since": 2021,
+        "blurb": "Vue 3 framework — used on the Vue iteration of BAM.",
+        "yearsOfExperience": 2021,
+        "description": "This framework over Vue 3 was used for the Vue version of our BAM system, as per request of our client. Used in only that project but got the hang of it."
     },
     {
-        "name": "Shopify",
-        "icon": "shopify",
-        "yearsOfExperience": 2023,
-        "description": "Gained experience in creating custom Shopify themes and utilized the Liquid templating language to develop more interactive and dynamic online stores"
+        "name": "CSS",
+        "icon": "css",
+        "cat": "Styling",
+        "since": 2019,
+        "blurb": "Grid, Flexbox, custom properties, animations — proficient from scratch.",
+        "yearsOfExperience": 2019,
+        "description": "Second code language ever learned. I see myself as very proficient with CSS, using CSS Grid and Flexbox extensively."
+    },
+    {
+        "name": "TailwindCSS",
+        "icon": "tailwind",
+        "cat": "Styling",
+        "since": 2022,
+        "blurb": "Utility-first CSS — what this very portfolio is built with.",
+        "yearsOfExperience": 2022,
+        "description": "Learned about it in a project where I helped with logic bugs, and decided to use it for my portfolio."
+    },
+    {
+        "name": "Sass",
+        "icon": "sass",
+        "cat": "Styling",
+        "since": 2019,
+        "blurb": "Variables, mixins, loops to mass-generate utility classes. Pre-Tailwind era.",
+        "yearsOfExperience": 2019,
+        "description": "Used with Foundation for almost all my projects. So useful to have variables in a file and use them throughout the whole project. Also used loops to create several classes at a time."
+    },
+    {
+        "name": "Foundation",
+        "icon": "foundation",
+        "cat": "Styling",
+        "since": 2019,
+        "blurb": "Grid framework used across many early client projects.",
+        "yearsOfExperience": 2019,
+        "description": "I feel comfortable using this framework — used it in many of my projects and it helps with responsiveness."
+    },
+    {
+        "name": "GSAP",
+        "icon": "gsap",
+        "cat": "Animation",
+        "since": 2019,
+        "blurb": "Parallax, letter reveals, X-axis scroll. Heavy use on butchershop.co.",
+        "yearsOfExperience": 2019,
+        "description": "First used with WordPress for fade-in animations, then pushed much further on butchershop.co — parallax, letter animations, X-axis scrolling and more."
     },
     {
         "name": "Framer",
         "icon": "framer",
+        "cat": "Animation",
+        "since": 2024,
+        "blurb": "Nocode + code components on Wing. PNG sequences and timed scroll.",
         "yearsOfExperience": 2024,
-        "description": "Started working with nocode frameworks this year for a landing page for Wing.com, spoiler alert we used code components at the end, but still a pretty solid tool"
+        "description": "Started working with nocode frameworks this year for Wing.com. Mixed nocode with code components at the end — a pretty solid tool."
+    },
+    {
+        "name": "Laravel",
+        "icon": "laravel",
+        "cat": "Backend",
+        "since": 2019,
+        "blurb": "PHP framework. APIs, auth, Eloquent across 3+ web apps.",
+        "yearsOfExperience": 2019,
+        "description": "This framework and language (PHP) were learned at the same time at my first job. Built 3+ web apps using this tech stack for the backend and API creation."
+    },
+    {
+        "name": "Node.js",
+        "icon": "node",
+        "cat": "Backend",
+        "since": 2019,
+        "blurb": "Bug-fixing and refactor work, then ported full app to Vue at Priio.",
+        "yearsOfExperience": 2019,
+        "description": "Worked on a project with a Node app — learned it to fix bugs and make refactors, which we later transcribed to Vue. This was the Priio app."
+    },
+    {
+        "name": "Express",
+        "icon": "express",
+        "cat": "Backend",
+        "since": 2022,
+        "blurb": "MERN-stack personal projects.",
+        "yearsOfExperience": 2022,
+        "description": "Started studying and using it for a personal project with the MERN stack."
+    },
+    {
+        "name": "GraphQL",
+        "icon": "graphql",
+        "cat": "Backend",
+        "since": 2022,
+        "blurb": "Strapi + Next consumption. Cleaner queries, only what you need.",
+        "yearsOfExperience": 2022,
+        "description": "Used with Strapi to make requests cleaner and enabled the team to only get exactly the data that we needed."
+    },
+    {
+        "name": "MySQL",
+        "icon": "mysql",
+        "cat": "Data",
+        "since": 2019,
+        "blurb": "Relational DB. Migrations, models, relations, cascades.",
+        "yearsOfExperience": 2019,
+        "description": "Started using this relational database management system with Laravel. Learned about models, migrations, relations, cascades and more."
+    },
+    {
+        "name": "MongoDB",
+        "icon": "mongo",
+        "cat": "Data",
+        "since": 2022,
+        "blurb": "NoSQL — studying for an upcoming personal project.",
+        "yearsOfExperience": 2022,
+        "description": "Learning and studying it because I wanted to learn about a No-SQL DB to complement my MySQL experience. Planning on using it on a personal project."
+    },
+    {
+        "name": "Algolia",
+        "icon": "algolia",
+        "cat": "Data",
+        "since": 2020,
+        "blurb": "Instant search. Implemented on the RockCreek Group site.",
+        "yearsOfExperience": 2020,
+        "description": "Learned to use it for a project with a big database to make requests almost instantly. Implemented on the RockCreek Group project."
+    },
+    {
+        "name": "WordPress",
+        "icon": "wordpress",
+        "cat": "CMS",
+        "since": 2019,
+        "blurb": "First CMS. ACF, flexible content, custom themes — Tebra, Grail, RockCreek.",
+        "yearsOfExperience": 2019,
+        "description": "My first CMS. Used throughout my career to create many sites using flexible content, ACF, and tools such as Algolia and GSAP."
+    },
+    {
+        "name": "Statamic",
+        "icon": "statamic",
+        "cat": "CMS",
+        "since": 2020,
+        "blurb": "CMS over Laravel — Butchershop.co. Custom blueprints + Vue components.",
+        "yearsOfExperience": 2020,
+        "description": "CMS mounted over Laravel used for the Butchershop.co website. Capable of creating blueprints of elements — a great CMS for custom Vue components on the frontend."
+    },
+    {
+        "name": "Strapi",
+        "icon": "strapi",
+        "cat": "CMS",
+        "since": 2021,
+        "blurb": "Headless CMS for the BAM backend. Compact, easy.",
+        "yearsOfExperience": 2021,
+        "description": "Headless CMS used for the backend part of the BAM project. Needed a compact, easy-to-use headless CMS and this fit perfectly."
+    },
+    {
+        "name": "Shopify",
+        "icon": "shopify",
+        "cat": "CMS",
+        "since": 2023,
+        "blurb": "Custom themes. Liquid templating with React islands.",
+        "yearsOfExperience": 2023,
+        "description": "Gained experience in creating custom Shopify themes and utilized the Liquid templating language to develop more interactive and dynamic online stores."
+    },
+    {
+        "name": "Figma",
+        "icon": "figma",
+        "cat": "Tools",
+        "since": 2019,
+        "blurb": "Source of truth for handoff. Wireframes through final.",
+        "yearsOfExperience": 2019,
+        "description": "Learned to use this app to create wireframes and used it day-to-day as the source of truth to create excellent looking websites and web apps."
+    },
+    {
+        "name": "Airtable",
+        "icon": "airtable",
+        "cat": "Tools",
+        "since": 2021,
+        "blurb": "Scripts + automations. Built an HR tool and a production data extension.",
+        "yearsOfExperience": 2021,
+        "description": "Learned about scripts and automations for an HR project. In January 2024 I created an extension script for a company to collect data in the production process."
+    },
+    {
+        "name": "Zapier",
+        "icon": "zapier",
+        "cat": "Tools",
+        "since": 2021,
+        "blurb": "Paired with Airtable for HR interview workflows.",
+        "yearsOfExperience": 2021,
+        "description": "Learned how to use it with Airtable for an internal project for the HR department to send invitations to interviewees and interviewers."
     }
 ]

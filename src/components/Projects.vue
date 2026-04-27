@@ -1,44 +1,137 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import Modal from '@/components/Modal.vue'
-import SingleProject from './SingleProject.vue'
-import projects from '../assets/data/projects.json'
-import type { ProjectPropsT } from '@/components/SingleProject.vue'
-import ProjectModalContent from '@/components/ProjectModalContent.vue'
+import projectsData from '@/assets/data/projects.json'
+import type { ProjectAttributes } from '@/utils/types'
 
-const openModal = ref<boolean>(false)
-const selectedProject = ref<ProjectPropsT>()
+const emit   = defineEmits<{ 'open-project': [project: ProjectAttributes] }>()
+const items  = projectsData as ProjectAttributes[]
 
-const handleOpenModal = (technology: ProjectPropsT) => {
-    selectedProject.value = technology
-    openModal.value = true
-}
+const spans = [
+    { col: 'span 8', row: 'span 2' },
+    { col: 'span 4', row: 'span 1' },
+    { col: 'span 4', row: 'span 1' },
+    { col: 'span 6', row: 'span 1' },
+    { col: 'span 6', row: 'span 2' },
+    { col: 'span 6', row: 'span 1' },
+    { col: 'span 4', row: 'span 1' },
+    { col: 'span 4', row: 'span 1' },
+    { col: 'span 4', row: 'span 1' },
+]
+
+const isLarge = (colSpan: string) => colSpan === 'span 8' || colSpan === 'span 6'
 </script>
 
 <template>
-    <section
-        class="bg-haiti text-white projects-section xl:mt-[320px] lg:mt-[270px] md:mt-[220px] mt-[150px]"
-    >
-        <div class="max-w-1440 mx-auto px-5 md:px-20">
-            <h3 id="projects" class="text-3xl lg:text-5xl font-medium">Projects</h3>
-            <div class="mt-10 flex flex-col gap-7 lg:grid lg:grid-cols-4">
-                <SingleProject
-                    v-for="project in projects"
-                    :project="project"
-                    :key="project.id"
-                    class="lg:col-span-2"
-                    @select-project="(val) => handleOpenModal(val)"
-                />
-            </div>
-        </div>
-        <Modal
-            :open-modal="openModal"
-            modal-classes="max-h-[60%] overflow-y-auto top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-mobile-modal bg-haiti text-white rounded-xl px-8 py-10 md:w-[500px] md:max-h-[70%] lg:w-[650px] lg:px-12 lg:py-14 xl:max-h-[80%] xl:px-14 xl:py-16"
-            @closeModal="() => (openModal = false)"
+    <div class="bento-grid">
+        <button
+            v-for="(p, i) in items"
+            :key="p.id"
+            class="bento-card"
+            :style="{
+                gridColumn: spans[i % spans.length].col,
+                gridRow:    spans[i % spans.length].row,
+            }"
+            @click="emit('open-project', p)"
         >
-            <div v-if="selectedProject">
-                <ProjectModalContent :selected-project="selectedProject" />
+            <img
+                :src="p.image"
+                :alt="p.name"
+                class="bento-img"
+            />
+            <div class="bento-gradient"></div>
+            <div class="bento-content">
+                <div class="bento-meta mono">0{{ i + 1 }} / {{ p.year }}</div>
+                <div class="bento-foot">
+                    <div class="bento-name serif" :class="{ large: isLarge(spans[i % spans.length].col) }">
+                        {{ p.name }}
+                    </div>
+                    <div class="bento-tags mono">{{ p.tags.slice(0, 3).join(' · ') }}</div>
+                </div>
             </div>
-        </Modal>
-    </section>
+        </button>
+    </div>
 </template>
+
+<style scoped>
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 190px;
+    gap: 14px;
+}
+
+.bento-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--line-strong);
+    background: var(--bg-elev);
+    cursor: pointer;
+    padding: 0;
+    color: inherit;
+    text-align: left;
+    transition: transform 400ms cubic-bezier(.2,.7,.2,1);
+}
+.bento-card:hover { transform: translateY(-3px); }
+
+.bento-img {
+    position: absolute;
+    inset: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    transition: transform 600ms cubic-bezier(.2,.7,.2,1), filter 300ms;
+}
+.bento-card:hover .bento-img {
+    transform: scale(1.05);
+    filter: brightness(0.65);
+}
+
+.bento-gradient {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(11,7,22,0.85) 100%);
+}
+
+.bento-content {
+    position: absolute; inset: 0;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bento-meta {
+    font-size: 10px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.bento-name {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.bento-name.large { font-size: 34px; }
+
+.bento-tags {
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+}
+
+/* Responsive: collapse to 2 columns on mobile */
+@media (max-width: 720px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+    }
+    .bento-card {
+        grid-column: span 1 !important;
+        grid-row:    span 1 !important;
+    }
+    .bento-name.large { font-size: 22px; }
+}
+@media (max-width: 440px) {
+    .bento-grid { grid-template-columns: 1fr; }
+}
+</style>
