@@ -1,148 +1,153 @@
 <script setup lang="ts">
-import { gsap } from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
-import { onMounted, ref } from 'vue'
-import svgs from './utils/svgs.vue'
-gsap.registerPlugin(ScrollTrigger)
-const heroElement = ref()
-const frontEnd = ref()
-const backEnd = ref()
-const fullStack = ref()
-const newSetOrder = new Set()
-let newArrayOrder: number[] = []
-const frontEndtechnologies = [
-    'html',
-    'css',
-    'js',
-    'typescript',
-    'vue',
-    'react',
-    'sass',
-    'tailwind',
-    'foundation',
-    'npm'
-]
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 
-const backEndTechnologies = [
-    'node',
-    'php',
-    'laravel',
-    'express',
-    'mongo',
-    'mysql',
-    'strapi',
-    'wordpress',
-    'graphql',
-    'algolia'
-]
+const roles    = ['Frontend', 'Backend', 'Fullstack']
+const roleIdx  = ref(0)
+const prevIdx  = ref(0)
+const animKey  = ref(0)
 
-const randomNumber = (arrayLength: number): number => {
-    return Math.floor(Math.random() * arrayLength)
+let interval: ReturnType<typeof setInterval>
+
+function scrollTo(id: string) {
+    const el = document.getElementById(id)
+    if (el) window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' })
 }
-
-const createRandomList = () => {
-    while (newSetOrder.size < backEndTechnologies.length) {
-        newSetOrder.add(randomNumber(backEndTechnologies.length))
-    }
-    newArrayOrder = [...newSetOrder] as number[]
-}
-
-createRandomList()
 
 onMounted(() => {
-    const tl = gsap.timeline({
-        repeat: -1,
-        yoyo: true
-    })
-
-    const tl2 = gsap.timeline({
-        repeat: -1,
-        yoyo: true
-    })
-
-    tl.to(frontEnd.value, { opacity: 1, y: 0, duration: 1 })
-        .to(frontEnd.value, { opacity: 0, y: -100, duration: 1 / 2 })
-        .to(backEnd.value, { opacity: 1, translateY: 0, duration: 1 / 2 })
-        .to(backEnd.value, { opacity: 1, translateY: 0, duration: 1 })
-        .to(backEnd.value, { opacity: 0, y: -100, duration: 1 / 2 })
-        .to(fullStack.value, { opacity: 1, translateY: 0, duration: 1 / 2 })
-        .to(fullStack.value, { opacity: 1, translateY: 0, duration: 1 })
-
-    tl2.to('.frontend', { opacity: 1, y: 0, duration: 1 })
-        .to('.frontend', { opacity: 0, y: -100, duration: 1 / 2 })
-        .to('.backend', { opacity: 1, translateY: 0, duration: 1 / 2 })
-        .to('.backend', { opacity: 1, translateY: 0, duration: 1 })
-        .set('.frontend', { y: 0, opacity: 1 })
-
-    frontEndtechnologies.forEach((tech) => {
-        tl2.set(`.${tech}`, { opacity: 0 })
-    })
-
-    newArrayOrder.forEach((order: number) => {
-        tl2.to(`.${backEndTechnologies[order]}`, { opacity: 0, duration: 1 / 5 }).to(
-            `.${frontEndtechnologies[order]}`,
-            { opacity: 1, duration: 1 / 5 },
-            '<'
-        )
-    })
+    interval = setInterval(() => {
+        prevIdx.value = roleIdx.value
+        roleIdx.value = (roleIdx.value + 1) % roles.length
+        animKey.value++
+    }, 2400)
 })
+
+onUnmounted(() => clearInterval(interval))
 </script>
 
 <template>
-    <section
-        ref="heroElement"
-        class="home bg-haiti text-purple-heart lg:mt-[300px] md:mt-[250px] mt-[200px]"
-    >
-        <div
-            class="max-w-1440 w-full mx-auto h-full px-5 md:px-20 lg:flex lg:justify-between lg:flex-wrap lg:gap-y-10 text-center lg:text-left"
-        >
-            <div class="title lg:w-fit">
-                <h2 class="name text-xl lg:text-2xl font-light text-slate-300">
-                    Hi, I am Fernando Barraza Quintero
-                </h2>
-                <div
-                    class="text-5xl md:text-6xl lg:text-[80px] font-medium lg:w-[400px] h-[72px] lg:h-[100px] relative overflow-hidden lg:mt-6 md:mt-3 mx-auto w-[200px] lg:mx-0 md:w-[250px]"
-                >
-                    <span ref="frontEnd" class="absolute bottom-0 left-0">Frontend</span>
-                    <span ref="backEnd" class="absolute opacity-0 bottom-0 left-0 translate-y-full"
-                        >Backend</span
-                    >
-                    <span
-                        ref="fullStack"
-                        class="absolute opacity-0 bottom-0 left-0 translate-y-full"
-                        >Fullstack</span
-                    >
-                </div>
-                <h1
-                    class="text-5xl md:text-6xl lg:text-[80px] h-fit font-medium web-dev text-white"
-                >
-                    Web Developer
-                </h1>
+    <section class="hero">
+        <div class="wrap">
+            <!-- Eyebrow -->
+            <div class="eyebrow hero-eyebrow reveal">
+                <span class="dot-accent"></span>
+                Available for new projects
             </div>
-            <div
-                class="flex flex-col lg:w-[360px] mt-10 lg:mt-0 relative justify-end min-h-[136px] w-[280px] mx-auto lg:mx-0"
-            >
-                <div class="flex flex-wrap w-full gap-x-2 gap-y-2 frontend absolute">
-                    <svgs
-                        class="w-12 lg:w-16 h-fit self-center max-h-12 lg:max-h-16"
-                        :class="icon"
-                        v-for="(icon, index) in frontEndtechnologies"
-                        :key="index"
-                        :name="icon"
-                    />
-                </div>
-                <div
-                    class="flex flex-wrap w-full gap-x-2 gap-y-2 absolute backend translate-y-[100px] bottom-0 left-0 opacity-0"
-                >
-                    <svgs
-                        class="w-12 lg:w-16 h-fit self-center max-h-12 lg:max-h-16"
-                        :class="icon"
-                        v-for="(icon, index) in backEndTechnologies"
-                        :key="index"
-                        :name="icon"
-                    />
-                </div>
+
+            <!-- Shell prompt -->
+            <div class="hero-prompt mono reveal">
+                <span class="dim">~/portfolio</span>
+                <span class="hero-dollar">&nbsp;$&nbsp;</span>whoami
+            </div>
+
+            <!-- Name -->
+            <h1 class="hero-name reveal">
+                Fernando<br />
+                Barraza Quintero<span class="hero-dot">.</span>
+            </h1>
+
+            <!-- Role rotator -->
+            <div class="hero-role mono reveal">
+                <span class="dim">role:</span>
+                <span class="role-slot">
+                    <Transition name="role-slide" mode="out-in">
+                        <span :key="animKey" class="role-word">{{ roles[roleIdx] }}</span>
+                    </Transition>
+                </span>
+                <span class="hero-role-suffix">Software Engineer</span>
+            </div>
+
+            <!-- Bio -->
+            <p class="hero-bio reveal">
+                Six years building products for the web, from
+                <span class="ink">Wing</span> (an Alphabet company) to
+                <span class="ink">Tebra</span>, <span class="ink">AppFire</span>,
+                and <span class="ink">Brownkind</span>. Vue, React, Next, Laravel, PHP, whatever the job calls for.
+            </p>
+
+            <!-- CTAs -->
+            <div class="hero-ctas reveal">
+                <a href="#work" class="btn primary" @click.prevent="scrollTo('work')">See selected work →</a>
+                <a href="mailto:febaquidev@gmail.com" class="btn">febaquidev@gmail.com ↗</a>
             </div>
         </div>
     </section>
 </template>
+
+<style scoped>
+.hero {
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+.hero-eyebrow {
+    margin-bottom: 28px;
+}
+.dot-accent {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+    flex-shrink: 0;
+}
+
+.hero-prompt {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+.hero-dollar { color: var(--accent); }
+
+.hero-name {
+    font-family: var(--serif);
+    font-size: clamp(56px, 11vw, 168px);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    margin: 0 0 36px;
+    color: var(--ink);
+}
+.hero-dot { color: var(--primary); }
+
+.hero-role {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    font-size: clamp(18px, 2.2vw, 26px);
+    margin-bottom: 36px;
+}
+.role-slot {
+    display: inline-flex;
+    min-width: 6em;
+    color: var(--primary);
+    overflow: hidden;
+    position: relative;
+}
+.role-word { display: inline-block; }
+.hero-role-suffix { color: var(--ink); }
+
+.hero-bio {
+    max-width: 560px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 40px;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Role word transition */
+.role-slide-enter-active { animation: slideUp 400ms cubic-bezier(.2,.7,.2,1); }
+.role-slide-leave-active  { animation: slideUp 300ms cubic-bezier(.2,.7,.2,1) reverse; }
+
+@media (max-width: 480px) {
+    .hero { padding-top: 120px; padding-bottom: 60px; }
+    .hero-role { font-size: 16px; }
+    .hero-bio { font-size: 16px; }
+}
+</style>
