@@ -61,7 +61,7 @@ onUnmounted(() => clearInterval(interval))
                 Six years building products for the web, from
                 <span class="ink">Wing</span> (an Alphabet company) to
                 <span class="ink">Tebra</span>, <span class="ink">AppFire</span>,
-                and <span class="ink">Brownkind</span>. Vue, React, Next, Laravel, PHP, whatever the job calls for.
+                and <span class="ink">Brownkind</span> and currently working at <span class="ink">Zillow Group</span> in <span class="ink">FollowUpBoss</span>. Vue, React, Next, Laravel, PHP, whatever the job calls for.
             </p>
 
             <!-- CTAs -->
