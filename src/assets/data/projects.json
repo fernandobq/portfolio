@@ -1,5 +1,17 @@
 [
     {
+        "id": 12,
+        "name": "SCA Contadores",
+        "client": "SCA Contadores",
+        "year": "2026",
+        "tags": ["Next.js", "React", "Netlify"],
+        "image": "/projects/scacontadores.png",
+        "link": "https://www.scacontadores.mx/",
+        "description": "Integral financial management and strategic planning for your business — since 1953.",
+        "work": "Designed and built the full revamp using Claude — owned it end to end: code, design, deployment, and client onboarding.",
+        "kind": "Marketing site"
+    },
+    {
         "id": 11,
         "name": "WeAllPadel",
         "client": "Personal",
